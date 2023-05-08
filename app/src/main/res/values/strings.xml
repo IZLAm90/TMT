@@ -5,5 +5,13 @@
     <string name="password">PassWord</string>
     <string name="forgetData">Did you Forget user name or password</string>
     <string name="noAccount"> you don\'t have an account ?</string>
+    <string name="createNewAccount"> تسجيل حساب جديد</string>
+    <string name="areYouDoc"> Are You A Doctor ?</string>
+    <string name="docApp"> Download Doctor  App</string>
+    <string name="English">English</string>
+    <string name="AR">عربي</string>
+    <string name="Tr">Türkçe</string>
+
+
 
 </resources>
