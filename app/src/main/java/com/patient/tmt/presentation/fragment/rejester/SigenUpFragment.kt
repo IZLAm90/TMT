@@ -1,4 +1,4 @@
-package com.patient.tmt.presentation.fragment.number
+package com.patient.tmt.presentation.fragment.rejester
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,12 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import com.patient.tmt.R
 
-
-class PhonCheckFragment : Fragment() {
+class SigenUpFragment : Fragment() {
+    private var param1: String? = null
+    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        arguments?.let {
 
+        }
     }
 
     override fun onCreateView(
@@ -20,10 +23,16 @@ class PhonCheckFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_phon_check, container, false)
+        return inflater.inflate(R.layout.fragment_sigen_up, container, false)
     }
 
     companion object {
-        fun newInstance() = PhonCheckFragment()
+        @JvmStatic
+        fun newInstance(param1: String, param2: String) =
+            SigenUpFragment().apply {
+                arguments = Bundle().apply {
+
+                }
+            }
     }
 }
