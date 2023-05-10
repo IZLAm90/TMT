@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".presentation.fragment.rejester.SigenUpFragment">
 
@@ -80,8 +80,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/shape_round_white"
         android:elevation="1dp"
         android:hint="@string/username"
@@ -98,8 +98,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/shape_round_white"
         android:elevation="1dp"
         android:hint="@string/username"
@@ -116,8 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/shape_round_white"
         android:elevation="1dp"
         android:hint="@string/username"
@@ -130,48 +130,100 @@
         android:textColor="#364C61"
         android:textColorHint="#364C61" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="14dp"
-            android:layout_height="14dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="30dp"
-            app:contentPaddingRight="50dp"
-            app:cardCornerRadius="40dp"
-            app:strokeWidth="3dp"
-            app:strokeColor="@color/textColor"
-            />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            app:shapeAppearance="@style/circleImage"
-            />
-        <TextView
+        <LinearLayout
+            android:layout_marginStart="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/password"
-            android:layout_gravity="center"
-            />
-    </LinearLayout>
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/password" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                app:cardCornerRadius="40dp"
+                app:contentPaddingRight="50dp"
+                app:strokeColor="@color/textColor"
+                app:strokeWidth="3dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/password" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:shapeAppearance="@style/circleImage" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                app:cardCornerRadius="40dp"
+                app:contentPaddingRight="50dp"
+                app:strokeColor="@color/textColor"
+                app:strokeWidth="3dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
     <TextView
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/shape_round_orang"
         android:layout_marginStart="30dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="30dp"
-        android:text="@string/login"
+        android:background="@drawable/shape_round_orang"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="18sp"
+        android:text="@string/login"
         android:textColor="@color/white"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="علي الشروط و الاحكام"
+            android:textColor="@color/appColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بالضغط علي زر انشاء حساب انت توافق" />
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
