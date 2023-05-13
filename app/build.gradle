@@ -85,4 +85,8 @@ dependencies {
     implementation "androidx.compose.runtime:runtime-livedata:1.4.3"
     implementation "androidx.compose.ui:ui-tooling:1.4.3"
     implementation "com.google.android.material:compose-theme-adapter:1.2.1"
+
+    ///otp
+//    implementation 'com.chaos.view:pinview:1.4.4'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
 }

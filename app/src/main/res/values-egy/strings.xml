@@ -13,6 +13,9 @@
     <string name="AR">عربي</string>
     <string name="Tr">Türkçe</string>
     <string name="confirmPhone">توثيق هاتفك الجوال</string>
+    <string name="confirm">توثيق هاتفك </string>
+    <string name="entrOtp">الرجاء كتابة رمز التحقق </string>
+    <string name="entrOtpTp"> أرسل إلى </string>
     <string name="phoneNumber">رقم الهاتف</string>
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
