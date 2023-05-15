@@ -26,7 +26,6 @@
             android:layout_marginTop="25dp"
             android:gravity="center"
             android:text="@string/login"
-            android:fontFamily="@font/tajawal"
             android:textColor="@color/textColor"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -38,7 +37,6 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
-            android:fontFamily="@font/tajawal"
             android:background="@drawable/shape_round_white"
             android:elevation="1dp"
             android:hint="@string/username"
@@ -60,7 +58,6 @@
             android:layout_marginEnd="30dp"
             android:background="@drawable/shape_round_white"
             android:elevation="1dp"
-            android:fontFamily="@font/tajawal"
             android:hint="@string/password"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
@@ -84,10 +81,9 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:fontFamily="@font/tajawal"
             />
         <TextView
-            android:fontFamily="@font/tajawal"
+            android:id="@+id/forgetPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -98,7 +94,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:fontFamily="@font/tajawal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -108,7 +103,7 @@
             android:textSize="15sp"
             android:textStyle="bold" />
         <TextView
-            android:fontFamily="@font/tajawal"
+            android:id="@+id/newAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -126,7 +121,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/dowan"
         android:layout_marginTop="90dp"
-        android:fontFamily="@font/tajawal"
         android:gravity="center"
         android:text="@string/areYouDoc"
         android:textColor="@color/appColor"
@@ -142,7 +136,6 @@
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="@string/docApp"
-        android:fontFamily="@font/tajawal"
         android:textColor="@color/textColor"
         android:textSize="14sp"
         android:textStyle="bold" />
@@ -167,7 +160,6 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="18sp"
-            android:fontFamily="@font/tajawal"
             android:textColor="@color/textColor"
             />
         <TextView
@@ -180,7 +172,6 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="18sp"
-            android:fontFamily="@font/tajawal"
             android:layout_marginStart="10dp"
             android:textColor="@color/white"
             />
@@ -194,7 +185,6 @@
             android:text="@string/Tr"
             android:gravity="center"
             android:textStyle="bold"
-            android:fontFamily="@font/tajawal"
             android:textSize="18sp"
             android:textColor="@color/textColor"
             />

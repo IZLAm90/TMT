@@ -13,6 +13,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 //        WindowCompat.setDecorFitsSystemWindows(window, false)
 //        window.statusBarColor = Color.YELLOW
     }
