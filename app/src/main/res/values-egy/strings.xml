@@ -16,6 +16,9 @@
     <string name="confirm">توثيق هاتفك </string>
     <string name="entrOtp">الرجاء كتابة رمز التحقق </string>
     <string name="entrOtpTp"> أرسل إلى </string>
+    <string name="speciality"> التخصصات الدقيقة</string>
+    <string name="askForSpeciality"> اطلب استشارة طبية متخصصة في اكثر من 30 عيادة مختلفة يخدمها نخبة من الاخصائيين و الاستشاريين</string>
+    <string name="getHelp"> احصل علي المساعدة</string>
     <string name="phoneNumber">رقم الهاتف</string>
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
