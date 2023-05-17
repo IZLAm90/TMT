@@ -1,4 +1,4 @@
-package com.patient.tmt.presentation.fragment.number
+package com.patient.tmt.presentation.fragment.auth.forgetpassword.number
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

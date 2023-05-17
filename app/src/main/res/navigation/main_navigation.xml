@@ -3,7 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    >
+    app:startDestination="@id/homeFragment">
 
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.patient.tmt.presentation.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/homeOfNavigationFragment"
+        android:name="com.patient.tmt.presentation.fragment.homenavigation.HomeOfNavigationFragment"
+        android:label="fragment_home_of_navigation"
+        tools:layout="@layout/fragment_home_of_navigation" />
 </navigation>

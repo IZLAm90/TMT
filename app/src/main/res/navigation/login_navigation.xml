@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.patient.tmt.presentation.fragment.login.LoginFragment"
+        android:name="com.patient.tmt.presentation.fragment.auth.forgetpassword.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/phonCheckFragment"
-        android:name="com.patient.tmt.presentation.fragment.number.PhonCheckFragment"
+        android:name="com.patient.tmt.presentation.fragment.auth.forgetpassword.number.PhonCheckFragment"
         android:label="fragment_phon_check"
         tools:layout="@layout/fragment_phon_check" >
         <action
@@ -31,17 +31,18 @@
     </fragment>
     <fragment
         android:id="@+id/otpFragment"
-        android:name="com.patient.tmt.presentation.fragment.otp.OtpFragment"
+        android:name="com.patient.tmt.presentation.fragment.auth.forgetpassword.otp.OtpFragment"
         android:label="fragment_otp"
         tools:layout="@layout/fragment_otp" />
     <fragment
         android:id="@+id/sigenUpFragment"
-        android:name="com.patient.tmt.presentation.fragment.rejester.SigenUpFragment"
+        android:name="com.patient.tmt.presentation.fragment.auth.forgetpassword.rejester.SigenUpFragment"
         android:label="fragment_sigen_up"
         tools:layout="@layout/fragment_sigen_up" />
     <fragment
         android:id="@+id/forgetPasswordFragment"
-        android:name="com.patient.tmt.presentation.fragment.forgetpassword.ForgetPasswordFragment"
+        android:name="com.patient.tmt.presentation.fragment.auth.forgetpassword.ForgetPasswordFragment"
         android:label="fragment_forget_password"
         tools:layout="@layout/fragment_forget_password" />
+    <include app:graph="@navigation/main_navigation" />
 </navigation>
