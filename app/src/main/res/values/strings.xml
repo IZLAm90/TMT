@@ -22,7 +22,7 @@
     <string name="phoneNumber">رقم الهاتف</string>
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
-
+    <string name="InstantConsultation">Instant Consultation</string>
 
 
 </resources>

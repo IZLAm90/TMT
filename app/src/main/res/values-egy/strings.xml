@@ -16,6 +16,7 @@
     <string name="confirm">توثيق هاتفك </string>
     <string name="entrOtp">الرجاء كتابة رمز التحقق </string>
     <string name="MediaclSpecialties">التخصصات الطبية</string>
+    <string name="InstantConsultation">استشارة فورية</string>
     <string name="entrOtpTp"> أرسل إلى </string>
     <string name="speciality"> التخصصات الدقيقة</string>
     <string name="askForSpeciality"> اطلب استشارة طبية متخصصة في اكثر من 30 عيادة مختلفة يخدمها نخبة من الاخصائيين و الاستشاريين</string>
