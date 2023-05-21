@@ -15,13 +15,16 @@
         <item name="android:fontFamily">@font/tajwal</item>
         <!-- Customize your theme here. -->
         <item name="pinViewStyle">@style/PinWidget.PinView</item>
-
     </style>
     <style name="roundedImage" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">8sp</item>
     </style>
-
+    <style name="AppTheme.TransparentStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize other attributes of your theme as needed -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
     <style name="circleImage" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

@@ -9,12 +9,13 @@ import android.view.ViewGroup
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-
-class BaseFragment(private val layout: Int) : Fragment() {
+@AndroidEntryPoint
+abstract class BaseFragment(private val layout: Int) : Fragment() {
     private var fragmentView: ViewGroup? = null
     private var baseActivity: BaseActivity? = null
     var savedInstanceState: Bundle? = null

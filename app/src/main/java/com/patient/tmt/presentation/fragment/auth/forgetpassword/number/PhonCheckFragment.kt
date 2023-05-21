@@ -29,7 +29,7 @@ class PhonCheckFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             conifermNum.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_phonCheckFragment)
+                findNavController().navigateUp()
             }
         }
     }

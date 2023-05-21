@@ -27,7 +27,7 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.loginBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_phonCheckFragment_to_otpFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_main_navigation)
         }
         binding.newAccount.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_sigenUpFragment)

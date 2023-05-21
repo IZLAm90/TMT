@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
             app:destination="@id/forgetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_main_navigation"
+            app:destination="@id/main_navigation" />
     </fragment>
     <fragment
         android:id="@+id/phonCheckFragment"
@@ -33,7 +36,11 @@
         android:id="@+id/otpFragment"
         android:name="com.patient.tmt.presentation.fragment.auth.forgetpassword.otp.OtpFragment"
         android:label="fragment_otp"
-        tools:layout="@layout/fragment_otp" />
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sigenUpFragment"
         android:name="com.patient.tmt.presentation.fragment.auth.forgetpassword.rejester.SigenUpFragment"
