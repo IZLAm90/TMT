@@ -6,15 +6,14 @@ import android.os.Bundle
 import androidx.core.view.WindowCompat
 import com.patient.tmt.R
 import com.patient.tmt.databinding.ActivityLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
     lateinit var binding:ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-//        WindowCompat.setDecorFitsSystemWindows(window, false)
-//        window.statusBarColor = Color.YELLOW
     }
 }

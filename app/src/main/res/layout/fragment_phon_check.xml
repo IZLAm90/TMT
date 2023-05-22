@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".presentation.fragment.auth.forgetpassword.number.PhonCheckFragment">
+    tools:context=".presentation.fragment.auth.auth.number.PhonCheckFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,20 +31,10 @@
     </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="40dp"
-        android:padding="10dp"
-        android:hint="@string/phoneNumber"
-        android:textColor="@color/textColor"
-        android:textSize="18sp"
-        android:textStyle="normal" />
+
 
     <LinearLayout
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginHorizontal="30dp"
@@ -57,16 +47,16 @@
             android:gravity="center"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:text="@string/defaultCodeNum"
+            android:hint="@string/defaultCodeNum"
             android:textColor="@color/textColor"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <View
             android:layout_width="2dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:background="@color/textColor"
+            android:background="@color/roundedTVColor"
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
@@ -74,6 +64,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@android:color/transparent"
+            android:hint="@string/phoneNumber"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/textColor"
             android:inputType="number" />
 
 

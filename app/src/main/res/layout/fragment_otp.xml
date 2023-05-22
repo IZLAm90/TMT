@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".presentation.fragment.auth.forgetpassword.otp.OtpFragment">
+    tools:context=".presentation.fragment.auth.auth.otp.OtpFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,17 +41,6 @@
         android:padding="10dp"
         android:text="@string/confirm"
         android:textColor="@color/textColor"
-        android:textSize="22sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="@string/entrOtp"
-        android:textColor="@color/textColor"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -61,12 +50,24 @@
         android:layout_gravity="end"
         android:gravity="center"
         android:padding="5dp"
-        android:text="@string/entrOtpTp"
+        android:hint="@string/entrOtp"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:padding="5dp"
+        android:hint="@string/entrOtpTp"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="normal" />
 
     <com.chaos.view.PinView
+        android:layout_marginTop="30dp"
         android:id="@+id/firstPinView"
         style="@style/PinWidget.PinView"
         android:layout_width="wrap_content"
@@ -95,13 +96,13 @@
     <TextView
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/shape_round_orang"
         android:gravity="center"
-        android:text="@string/login"
+        android:text="@string/NumConfirm"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -117,17 +118,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="@string/entrOtpTp"
+            android:text="@string/reSend"
             android:textColor="@color/appColor"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/entrOtpTp"
-            android:textColor="@color/textColor"
             android:textSize="18sp"
             android:textStyle="bold" />
 

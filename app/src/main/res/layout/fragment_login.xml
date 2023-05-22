@@ -1,32 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
-    tools:context=".presentation.fragment.auth.forgetpassword.login.LoginFragment">
+    android:background="@drawable/login_bk"
+    tools:context=".presentation.fragment.auth.auth.login.LoginFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:elevation="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_bk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yourHealth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/yourHealth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/logotmt" />
+        android:layout_marginTop="180dp"
+        android:background="@drawable/back_login"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:gravity="center"
+            android:layout_marginHorizontal="35dp"
+            android:gravity="start"
             android:text="@string/login"
-            android:textColor="@color/textColor"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -40,14 +71,15 @@
             android:background="@drawable/shape_round_white"
             android:elevation="1dp"
             android:hint="@string/username"
+            android:textSize="15sp"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:maxLines="1"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:textAlignment="center"
-            android:textColor="#364C61"
-            android:textColorHint="#364C61" />
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor" />
 
         <EditText
             android:id="@+id/EtPassword"
@@ -65,23 +97,24 @@
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:textAlignment="center"
-            android:textColor="#364C61"
-            android:textColorHint="#364C61" />
+            android:textSize="15sp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor" />
 
         <TextView
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/shape_round_orang"
+            android:layout_height="47dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
-            android:text="@string/login"
+            android:background="@drawable/shape_round_orang"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            android:text="@string/login"
             android:textColor="@color/white"
-            />
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/forgetPassword"
             android:layout_width="match_parent"
@@ -89,7 +122,7 @@
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="@string/forgetData"
-            android:textColor="@color/textColor"
+            android:textColor="@color/appColor"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -99,9 +132,10 @@
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="@string/noAccount"
-            android:textColor="@color/appColor"
+            android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/newAccount"
             android:layout_width="match_parent"
@@ -109,85 +143,87 @@
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="@string/createNewAccount"
-            android:textColor="@color/textColor"
+            android:textColor="@color/appColor"
             android:textSize="15sp"
             android:textStyle="bold" />
 
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/dowan"
         android:layout_marginTop="90dp"
         android:gravity="center"
         android:text="@string/areYouDoc"
-        android:textColor="@color/appColor"
+        android:textColor="@color/black"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dowan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/dowan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/lang"
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="@string/docApp"
-        android:textColor="@color/textColor"
+        android:textColor="@color/appColor"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <LinearLayout
         android:id="@+id/lang"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="bottom"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="center"
         android:orientation="horizontal"
-        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
         <TextView
             android:id="@+id/eng"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="42dp"
             android:background="@drawable/shape_round_out_line"
-            android:paddingHorizontal="25dp"
-            android:text="@string/English"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            android:paddingHorizontal="35dp"
+            android:text="@string/English"
             android:textColor="@color/textColor"
-            />
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/Arabic"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:background="@drawable/shape_round_orang"
-            android:paddingHorizontal="25dp"
-            android:text="@string/AR"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            android:layout_height="42dp"
             android:layout_marginStart="10dp"
+            android:background="@drawable/shape_round_orang"
+            android:gravity="center"
+            android:paddingHorizontal="35dp"
+            android:text="@string/AR"
             android:textColor="@color/white"
-            />
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tru"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="42dp"
             android:layout_marginStart="10dp"
             android:background="@drawable/shape_round_out_line"
-            android:paddingHorizontal="25dp"
-            android:text="@string/Tr"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            android:paddingHorizontal="35dp"
+            android:text="@string/Tr"
             android:textColor="@color/textColor"
-            />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

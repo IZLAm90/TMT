@@ -4,226 +4,239 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_bk"
     android:orientation="vertical"
-    tools:context=".presentation.fragment.auth.forgetpassword.rejester.SigenUpFragment">
+    tools:context=".presentation.fragment.auth.auth.rejester.SigenUpFragment">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/login_logo" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="15dp"
-        android:orientation="horizontal"
-        android:padding="5dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_login"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/back" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginStart="10dp"
-            android:padding="10dp"
-            android:text="@string/confirmPhone"
-            android:textColor="@color/textColor"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:text="@string/confirmPhone"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
 
         <EditText
-            android:id="@+id/EtUserName"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="15dp"
-            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
             android:background="@drawable/shape_round_white"
             android:elevation="1dp"
-            android:hint="@string/username"
+            android:hint="@string/firstName"
             android:imeOptions="actionDone"
+            android:textSize="14sp"
             android:inputType="text"
             android:maxLines="1"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:textAlignment="center"
-            android:textColor="#364C61"
-            android:textColorHint="#364C61" />
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
 
         <EditText
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
-            android:layout_weight="1"
             android:background="@drawable/shape_round_white"
             android:elevation="1dp"
-            android:hint="@string/username"
+            android:hint="@string/lastName"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:maxLines="1"
+            android:textSize="14sp"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:textAlignment="center"
-            android:textColor="#364C61"
-            android:textColorHint="#364C61" />
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
 
-    </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_round_white"
+            android:elevation="1dp"
+            android:hint="@string/usernameEn"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/shape_round_white"
-        android:elevation="1dp"
-        android:hint="@string/username"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:maxLines="1"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:textAlignment="center"
-        android:textColor="#364C61"
-        android:textColorHint="#364C61" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_round_white"
+            android:elevation="1dp"
+            android:hint="@string/Email"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/shape_round_white"
-        android:elevation="1dp"
-        android:hint="@string/username"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:maxLines="1"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:textAlignment="center"
-        android:textColor="#364C61"
-        android:textColorHint="#364C61" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_round_white"
+            android:elevation="1dp"
+            android:hint="@string/dataOfPairth"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/shape_round_white"
-        android:elevation="1dp"
-        android:hint="@string/username"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:maxLines="1"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:textAlignment="center"
-        android:textColor="#364C61"
-        android:textColorHint="#364C61" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableEnd="@drawable/man"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="@string/man" />
+
+                <ImageView
+                    android:id="@+id/selectedMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/not_selected" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp">
+
+                <ImageView
+                    android:id="@+id/selectedWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/not_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/woman"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="@string/man" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_round_orang"
+            android:gravity="center"
+            android:text="@string/createNewAccount"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_marginStart="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="علي الشروط و الاحكام"
+                android:textColor="@color/appColor" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/password" />
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                app:cardCornerRadius="40dp"
-                app:contentPaddingRight="50dp"
-                app:strokeColor="@color/textColor"
-                app:strokeWidth="3dp" />
+                android:gravity="center"
+                android:text="بالضغط علي زر انشاء حساب انت توافق" />
 
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginEnd="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_alignParentEnd="true">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/password" />
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                app:shapeAppearance="@style/circleImage" />
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                app:cardCornerRadius="40dp"
-                app:contentPaddingRight="50dp"
-                app:strokeColor="@color/textColor"
-                app:strokeWidth="3dp" />
-
-        </LinearLayout>
-    </RelativeLayout>
-
-
-    <TextView
-        android:id="@+id/loginBtn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/shape_round_orang"
-        android:gravity="center"
-        android:text="@string/login"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="علي الشروط و الاحكام"
-            android:textColor="@color/appColor" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="بالضغط علي زر انشاء حساب انت توافق" />
-
-
     </LinearLayout>
-
 
 </LinearLayout>

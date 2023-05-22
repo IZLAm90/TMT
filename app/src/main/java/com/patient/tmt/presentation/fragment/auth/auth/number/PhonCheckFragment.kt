@@ -1,4 +1,4 @@
-package com.patient.tmt.presentation.fragment.auth.forgetpassword.number
+package com.patient.tmt.presentation.fragment.auth.auth.number
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.patient.tmt.R
 import com.patient.tmt.databinding.FragmentPhonCheckBinding
 
 

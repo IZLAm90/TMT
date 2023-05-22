@@ -3,7 +3,17 @@
     <string name="app_name">TMT</string>
     <string name="login">Login</string>
     <string name="username">User Name</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="usernameEn">اسم المستخدم (بالانجليزية)</string>
     <string name="password">PassWord</string>
+    <string name="Email">Email</string>
+    <string name="continuation">continue</string>
+    <string name="man">man</string>
+    <string name="dataOfPairth">تاريخ الميلاد</string>
+    <string name="forgetPass"> نسيت كلمة المرور</string>
+    <string name="wrong">خطأ</string>
+    <string name="enterTheUserName">يرجي ادخال اسم المستخدم</string>
     <string name="forgetData">Did you Forget user name or password</string>
     <string name="noAccount"> you don\'t have an account ?</string>
     <string name="createNewAccount"> تسجيل حساب جديد</string>
@@ -13,6 +23,8 @@
     <string name="AR">عربي</string>
     <string name="Tr">Türkçe</string>
     <string name="confirmPhone">توثيق هاتفك الجوال</string>
+    <string name="yourHealth">Your Health Our Priority</string>
+    <string name="reSend"> إذا لم تتلق رمزًا! إعادة إرسال </string>
     <string name="confirm">توثيق هاتفك </string>
     <string name="entrOtp">الرجاء كتابة رمز التحقق </string>
     <string name="MediaclSpecialties">التخصصات الطبية</string>
@@ -24,5 +36,6 @@
     <string name="phoneNumber">رقم الهاتف</string>
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
+
 
 </resources>

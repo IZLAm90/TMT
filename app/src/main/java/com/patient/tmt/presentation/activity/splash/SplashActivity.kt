@@ -19,7 +19,7 @@ class SplashActivity : BaseActivity(R.layout.fragment_splash) {
         binding= FragmentSplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
         lifecycleScope.launch {
-            delay(4000)
+            delay(1000)
             withContext(Dispatchers.Main){
                 startActivity(LoginActivity::class.java)
             }

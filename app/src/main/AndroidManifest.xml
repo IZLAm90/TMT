@@ -17,23 +17,29 @@
         tools:targetApi="31">
         <activity
             android:name=".presentation.activity.login.LoginActivity"
-            android:exported="true"/>
+            android:exported="true"
+            android:theme="@style/AppTheme.TransparentStatusBarLogin"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".presentation.activity.splash.SplashActivity"
             android:exported="true"
             android:theme="@style/AppTheme.TransparentStatusBar"
+            android:screenOrientation="portrait"
             >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".presentation.activity.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.TMT"
+            android:screenOrientation="portrait"
+            >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

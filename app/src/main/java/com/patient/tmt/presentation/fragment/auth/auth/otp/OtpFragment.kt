@@ -1,4 +1,4 @@
-package com.patient.tmt.presentation.fragment.auth.forgetpassword.otp
+package com.patient.tmt.presentation.fragment.auth.auth.otp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

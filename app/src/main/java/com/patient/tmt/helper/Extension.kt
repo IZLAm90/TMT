@@ -11,8 +11,12 @@ import android.os.Build
 import android.os.Build.VERSION.SDK_INT
 import android.os.Parcelable
 import android.telephony.TelephonyManager
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import com.bumptech.glide.Glide
@@ -24,7 +28,21 @@ fun ImageView.loadImage(image: String) {
     Glide.with(this.context).load(image).into(this)
 }
 
-
+fun TextView.setTextWithDifferentColors(text: String, vararg colors: Int) {
+    val spannableString = SpannableString(text)
+    val words = text.trim().split("\\s+".toRegex())
+    var colorIndex = 0
+    for (word in words) {
+        val color = colors[colorIndex % colors.size]
+        val startIndex = text.indexOf(word)
+        val endIndex = startIndex + word.length
+        if (startIndex >= 0) {
+            spannableString.setSpan(ForegroundColorSpan(color), startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+        }
+        colorIndex++
+    }
+    this.text = spannableString
+}
 
 fun Context.isMyServiceRunning(serviceClass: Class<*>): Boolean {
     val manager = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager

@@ -2,7 +2,17 @@
     <string name="app_name">TMT</string>
     <string name="login">Login</string>
     <string name="username">User Name</string>
+    <string name="usernameEn">User Name In English</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
     <string name="password">PassWord</string>
+    <string name="continuation">استمرار</string>
+    <string name="forgetPass"> نسيت كلمة المرور</string>
+    <string name="Email">الايميل</string>
+    <string name="wrong">Wrong</string>
+    <string name="enterTheUserName">Enter The User Name</string>
+    <string name="man">man</string>
+    <string name="dataOfPairth">تاريخ الميلاد</string>
     <string name="forgetData">Did you Forget user name or password</string>
     <string name="noAccount"> you don\'t have an account ?</string>
     <string name="createNewAccount"> تسجيل حساب جديد</string>
@@ -16,14 +26,16 @@
     <string name="confirm">توثيق هاتفك </string>
     <string name="entrOtp">الرجاء كتابة رمز التحقق </string>
     <string name="entrOtpTp"> أرسل إلى </string>
+    <string name="reSend"> أرسل إلى </string>
     <string name="speciality"> التخصصات الدقيقة</string>
     <string name="askForSpeciality"> اطلب استشارة طبية متخصصة في اكثر من 30 عيادة مختلفة يخدمها نخبة من الاخصائيين و الاستشاريين</string>
     <string name="getHelp"> احصل علي المساعدة</string>
+    <string name="yourHealth">Your Health Our Priority</string>
     <string name="phoneNumber">رقم الهاتف</string>
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
     <string name="InstantConsultation">Instant Consultation</string>
-   
+
 
 
 </resources>
