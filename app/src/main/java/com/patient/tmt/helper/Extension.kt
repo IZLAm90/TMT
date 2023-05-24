@@ -15,6 +15,7 @@ import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.util.Log
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -22,6 +23,32 @@ import androidx.core.app.ActivityCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.HttpException
 import com.patient.tmt.R
+
+fun String.isValidEmail(): Boolean {
+    val emailRegex = Regex(pattern = "^[^\\s].+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\$")
+    return matches(emailRegex)
+}
+fun EditText.isValidInput(): Boolean {
+    val input = text.toString().trim()
+    return input.isNotEmpty() && !input.startsWith(" ")
+}
+
+fun EditText.isValidEmail(): Boolean {
+    val email = text.toString().trim()
+    val emailRegex = Regex(pattern = "^[^\\s].+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\$")
+    return email.matches(emailRegex)
+}
+
+fun EditText.isSaudiPhoneNumber(): Boolean {
+    val phoneNumber = text.toString().trim()
+    val saudiPhoneNumberRegex = Regex(pattern = "^\\+?966\\d{9}$")
+    return phoneNumber.matches(saudiPhoneNumberRegex)
+}
+
+fun String.isStrongPassword(): Boolean {
+    val passwordRegex = Regex(pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}\$")
+    return matches(passwordRegex)
+}
 
 private const val TAG = "Extentions"
 fun ImageView.loadImage(image: String) {
@@ -37,7 +64,12 @@ fun TextView.setTextWithDifferentColors(text: String, vararg colors: Int) {
         val startIndex = text.indexOf(word)
         val endIndex = startIndex + word.length
         if (startIndex >= 0) {
-            spannableString.setSpan(ForegroundColorSpan(color), startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            spannableString.setSpan(
+                ForegroundColorSpan(color),
+                startIndex,
+                endIndex,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
         }
         colorIndex++
     }
@@ -55,19 +87,19 @@ fun Context.isMyServiceRunning(serviceClass: Class<*>): Boolean {
 }
 
 
- @RequiresApi(Build.VERSION_CODES.O)
- fun Activity.requestPermission() {
-     requestPermissions(
-         arrayOf(
-             Manifest.permission.READ_SMS,
-             Manifest.permission.READ_PHONE_NUMBERS,
-             Manifest.permission.READ_PHONE_STATE
-         ), 100
-     )
- }
+@RequiresApi(Build.VERSION_CODES.O)
+fun Activity.requestPermission() {
+    requestPermissions(
+        arrayOf(
+            Manifest.permission.READ_SMS,
+            Manifest.permission.READ_PHONE_NUMBERS,
+            Manifest.permission.READ_PHONE_STATE
+        ), 100
+    )
+}
 
 @RequiresApi(Build.VERSION_CODES.O)
-fun Activity.isPermissionSMSGranted() : Boolean {
+fun Activity.isPermissionSMSGranted(): Boolean {
     return ActivityCompat.checkSelfPermission(
         this,
         Manifest.permission.READ_PHONE_STATE
@@ -83,13 +115,12 @@ fun Activity.isPermissionSMSGranted() : Boolean {
 }
 
 
-
 inline fun <reified T : Parcelable> Intent.parcelable(key: String): T? = when {
     SDK_INT >= 33 -> getParcelableExtra(key, T::class.java)
     else -> @Suppress("DEPRECATION") getParcelableExtra(key) as? T
 }
 
-fun Context.getCurrentPhoneNumber(){
+fun Context.getCurrentPhoneNumber() {
     val telephonyManager = this.getSystemService(TELEPHONY_SERVICE) as TelephonyManager
     val permission = null
     if (ActivityCompat.checkSelfPermission(
@@ -103,8 +134,8 @@ fun Context.getCurrentPhoneNumber(){
             Manifest.permission.READ_PHONE_STATE
         ) == PackageManager.PERMISSION_GRANTED
     ) {
-        val phoneNumber =  telephonyManager.line1Number
-        Log.e("mmmmmmm",phoneNumber?.toString()?:"")
+        val phoneNumber = telephonyManager.line1Number
+        Log.e("mmmmmmm", phoneNumber?.toString() ?: "")
 
     }
 }
@@ -138,7 +169,7 @@ fun Context.getCurrentRamSize(): Long {
         print("ram size " + currentRamSize)
         return availableMegs
     } catch (ex: Exception) {
-        Log.e(TAG, "getCurrentRamSize: ", )
+        Log.e(TAG, "getCurrentRamSize: ")
         return 1024L
     }
 }

@@ -1,4 +1,4 @@
-package com.patient.tmt.presentation.activity
+package com.patient.tmt.presentation.activity.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -22,65 +22,65 @@ object NetWorkModule {
     @Provides
     fun providesLoggingInterceptor(): HttpLoggingInterceptor {
         return HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
-        @Provides
-        fun provideOkHttpClient(
-            loggingInterceptor: HttpLoggingInterceptor,
-            gateway: PreferencesGateway
-        ): OkHttpClient {
-            val okHttpClient = OkHttpClient().newBuilder()
-            okHttpClient.callTimeout(60, TimeUnit.SECONDS)
-            okHttpClient.connectTimeout(60, TimeUnit.SECONDS)
-            okHttpClient.readTimeout(60, TimeUnit.SECONDS)
-            okHttpClient.writeTimeout(60, TimeUnit.SECONDS)
-            okHttpClient.addNetworkInterceptor { chain ->
-                val token = gateway.load(TOKEN, "")
-                val original = chain.request()
-                val requestBuilder = original.newBuilder()
-                    .method(original.method, original.body)
+    }
+    @Provides
+    fun provideOkHttpClient(
+        loggingInterceptor: HttpLoggingInterceptor,
+        gateway: PreferencesGateway
+    ): OkHttpClient {
+        val okHttpClient = OkHttpClient().newBuilder()
+        okHttpClient.callTimeout(60, TimeUnit.SECONDS)
+        okHttpClient.connectTimeout(60, TimeUnit.SECONDS)
+        okHttpClient.readTimeout(60, TimeUnit.SECONDS)
+        okHttpClient.writeTimeout(60, TimeUnit.SECONDS)
+        okHttpClient.addNetworkInterceptor { chain ->
+            val token = gateway.load(TOKEN, "")
+            val original = chain.request()
+            val requestBuilder = original.newBuilder()
+                .method(original.method, original.body)
 
-                requestBuilder.addHeader("Accept", "application/json")
+            requestBuilder.addHeader("Accept", "application/json")
 //            requestBuilder.addHeader("Content-Type", "application/x-www-form-urlencoded")
-                if (token.isNullOrBlank().not()) {
-                    requestBuilder.addHeader("Authorization", token!!)
-                }
-
-                val request = requestBuilder
-                    .build()
-                return@addNetworkInterceptor chain.proceed(request)
+            if (token.isNullOrBlank().not()) {
+                requestBuilder.addHeader("Authorization", token!!)
             }
-            if (BuildConfig.DEBUG) {
-                okHttpClient.addInterceptor(loggingInterceptor)
-            }
-            okHttpClient.build()
-            return okHttpClient.build()
-        }
 
-        @Provides
-        fun provideConverterFactory(): Converter.Factory {
-            return GsonConverterFactory.create(GsonBuilder().serializeNulls().create())
-        }
-
-        @Provides
-        fun providesBaseUrl(): String {
-            return VARIANT_URL
-        }
-
-        @Provides
-        fun provideRetrofitClient(
-            okHttpClient: OkHttpClient,
-            baseUrl: String,
-            converterFactory: Converter.Factory
-        ): Retrofit {
-            return Retrofit.Builder()
-                .baseUrl(baseUrl)
-                .client(okHttpClient)
-                .addConverterFactory(converterFactory)
+            val request = requestBuilder
                 .build()
+            return@addNetworkInterceptor chain.proceed(request)
         }
+        if (BuildConfig.DEBUG) {
+            okHttpClient.addInterceptor(loggingInterceptor)
+        }
+        okHttpClient.build()
+        return okHttpClient.build()
+    }
 
-        @Provides
-        fun provideWeatherApi(retrofit: Retrofit): UserApi {
-            return retrofit.create(UserApi::class.java)
-        }
+    @Provides
+    fun provideConverterFactory(): Converter.Factory {
+        return GsonConverterFactory.create(GsonBuilder().serializeNulls().create())
+    }
+
+    @Provides
+    fun providesBaseUrl(): String {
+        return "http://185.137.246.85/"
+    }
+
+    @Provides
+    fun provideRetrofitClient(
+        okHttpClient: OkHttpClient,
+        baseUrl: String,
+        converterFactory: Converter.Factory
+    ): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl(baseUrl)
+            .client(okHttpClient)
+            .addConverterFactory(converterFactory)
+            .build()
+    }
+
+    @Provides
+    fun provideWeatherApi(retrofit: Retrofit): UserApi {
+        return retrofit.create(UserApi::class.java)
     }
 }

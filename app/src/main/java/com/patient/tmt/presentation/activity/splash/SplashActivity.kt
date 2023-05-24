@@ -5,7 +5,6 @@ import androidx.lifecycle.lifecycleScope
 import com.patient.base.BaseActivity
 import com.patient.tmt.R
 import com.patient.tmt.databinding.FragmentSplashBinding
-import com.patient.tmt.presentation.activity.MainActivity
 import com.patient.tmt.presentation.activity.login.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*

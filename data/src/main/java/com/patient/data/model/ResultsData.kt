@@ -12,3 +12,17 @@ data class ResultsData(
 
 )
 
+data class LoginResponse(
+    val patient: String,
+    val success: Boolean,
+    val message: String
+)
+
+data class ForGetPassActive(
+    val serial: Int? = null,
+    val mobile: String? = null,
+    val activationCode: String? = null,
+    val activated: Boolean
+)
+
+data class ForgetSucces(val successFlag: Int? = null)

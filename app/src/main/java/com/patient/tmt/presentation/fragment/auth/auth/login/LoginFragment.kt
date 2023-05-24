@@ -23,7 +23,12 @@ class LoginFragment : BaseFragment(R.layout.fragment_login) {
             val colors = intArrayOf(Color.WHITE, resources.getColor(R.color.appColor))
             yourHealth.setTextWithDifferentColors(resources.getString(R.string.yourHealth), *colors)
             loginBtn.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_main_navigation)
+//                if (EtUserName.text.isNullOrEmpty()) {
+//                    ErrorDialog("Enter The User Name")
+//                } else if (EtPassword.text.isNullOrEmpty()) {
+//                    ErrorDialog("Enter The PassWord")
+//                } else
+                    findNavController().navigate(R.id.action_loginFragment_to_viewPagerFragment)
             }
             newAccount.setOnClickListener {
                 findNavController().navigate(R.id.action_loginFragment_to_sigenUpFragment)

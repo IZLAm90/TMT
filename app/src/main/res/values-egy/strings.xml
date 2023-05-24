@@ -30,6 +30,7 @@
     <string name="MediaclSpecialties">التخصصات الطبية</string>
     <string name="InstantConsultation">استشارة فورية</string>
     <string name="entrOtpTp"> أرسل إلى </string>
+    <string name="skip"> Skip</string>
     <string name="speciality"> التخصصات الدقيقة</string>
     <string name="askForSpeciality"> اطلب استشارة طبية متخصصة في اكثر من 30 عيادة مختلفة يخدمها نخبة من الاخصائيين و الاستشاريين</string>
     <string name="getHelp"> احصل علي المساعدة</string>

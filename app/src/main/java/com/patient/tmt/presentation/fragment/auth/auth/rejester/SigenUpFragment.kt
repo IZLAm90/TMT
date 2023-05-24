@@ -5,33 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.patient.base.BaseFragment
 import com.patient.tmt.R
+import com.patient.tmt.databinding.FragmentSigenUpBinding
+import com.patient.tmt.helper.isValidEmail
+import com.patient.tmt.helper.isValidInput
 
-class SigenUpFragment : Fragment() {
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sigen_up, container, false)
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SigenUpFragment().apply {
-                arguments = Bundle().apply {
-
+class SigenUpFragment : BaseFragment(R.layout.fragment_sigen_up) {
+    private lateinit var binding: FragmentSigenUpBinding
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding =FragmentSigenUpBinding.bind(view)
+        binding.apply {
+            sigenUp.setOnClickListener {
+                if (FName.isValidInput() && SName.isValidInput() && UserNameEn.isValidInput() && Email.isValidEmail() && dateOfBirthe.isValidInput()){
+                    findNavController().navigate(R.id.action_sigenUpFragment_to_phonCheckFragment)
+                }else {
+                    ErrorDialog("enter Valid data")
                 }
             }
+        }
     }
 }

@@ -1,19 +1,21 @@
 package com.patient.base
 
+import android.app.Dialog
 import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.util.Log
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.patient.base.databinding.ErrorDialogBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.SharedFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+
 @AndroidEntryPoint
 abstract class BaseFragment(private val layout: Int) : Fragment() {
     private var fragmentView: ViewGroup? = null
@@ -55,6 +57,22 @@ abstract class BaseFragment(private val layout: Int) : Fragment() {
         baseActivity = null
     }
 
+    open fun ErrorDialog(error: String) {
+        val dialog = activity?.let { Dialog(it) }
+        dialog?.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        val binding =
+            dialog?.layoutInflater?.let { ErrorDialogBinding.inflate(it) } // Inflate with dialog's layoutInflater
+        binding?.root?.let { dialog?.setContentView(it) }
+        dialog?.setCancelable(true)
+        dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog?.window?.setGravity(Gravity.CENTER_VERTICAL)
+        dialog?.show()
+        Log.d("islam", "ErrorDialog: $error")
+//        binding?.islka?.text = error // Set the text for the TextView
+//        binding?.con?.setOnClickListener {
+//            dialog.dismiss()
+//        }
+    }
 
 //    protected fun handleErrorGeneral(th: Throwable, func: (() -> Unit)? = null): CustomErrorThrow? {
 //        return baseActivity?.handleErrorGeneral(th, func)

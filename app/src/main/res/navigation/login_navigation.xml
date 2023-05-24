@@ -11,9 +11,6 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_phonCheckFragment"
-            app:destination="@id/phonCheckFragment" />
-        <action
             android:id="@+id/action_loginFragment_to_sigenUpFragment"
             app:destination="@id/sigenUpFragment" />
         <action
@@ -22,6 +19,9 @@
         <action
             android:id="@+id/action_loginFragment_to_forgetPasswordFragment2"
             app:destination="@id/forgetPasswordFragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
     </fragment>
     <fragment
         android:id="@+id/phonCheckFragment"
@@ -45,11 +45,20 @@
         android:id="@+id/sigenUpFragment"
         android:name="com.patient.tmt.presentation.fragment.auth.auth.rejester.SigenUpFragment"
         android:label="fragment_sigen_up"
-        tools:layout="@layout/fragment_sigen_up" />
+        tools:layout="@layout/fragment_sigen_up" >
+        <action
+            android:id="@+id/action_sigenUpFragment_to_phonCheckFragment"
+            app:destination="@id/phonCheckFragment" />
+    </fragment>
     <include app:graph="@navigation/main_navigation" />
     <fragment
         android:id="@+id/forgetPasswordFragment2"
         android:name="com.patient.tmt.presentation.fragment.auth.auth.forgetpass.ForgetPasswordFragment"
         android:label="fragment_forget_password"
         tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.patient.tmt.presentation.fragment.viewpager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
 </navigation>

@@ -50,6 +50,7 @@
 
 
         <EditText
+            android:id="@+id/FName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -69,6 +70,7 @@
             android:textColorHint="@color/gray" />
 
         <EditText
+            android:id="@+id/SName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -88,6 +90,7 @@
             android:textColorHint="@color/gray" />
 
         <EditText
+            android:id="@+id/UserNameEn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -107,6 +110,7 @@
             android:textColorHint="@color/gray" />
 
         <EditText
+            android:id="@+id/Email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -126,6 +130,7 @@
             android:textColorHint="@color/gray" />
 
         <EditText
+            android:id="@+id/dateOfBirthe"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="30dp"
@@ -203,7 +208,7 @@
 
 
         <TextView
-            android:id="@+id/loginBtn"
+            android:id="@+id/sigenUp"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginStart="30dp"

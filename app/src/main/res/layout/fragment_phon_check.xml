@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context=".presentation.fragment.auth.auth.number.PhonCheckFragment">
 
     <LinearLayout
@@ -19,6 +20,7 @@
             android:src="@drawable/back" />
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -74,7 +76,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/conifermNum"
+        android:id="@+id/confirmNum"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"

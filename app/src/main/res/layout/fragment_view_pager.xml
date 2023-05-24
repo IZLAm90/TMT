@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".presentation.fragment.viewpager.ViewPagerFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/mainViewPager"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_below="@id/mainViewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:dotsColor="#707070"
+        app:dotsCornerRadius="1dp"
+        app:dotsSize="3dp"
+        app:dotsSpacing="3dp"
+        app:dotsWidthFactor="3"
+        app:progressMode="false"
+        app:selectedDotColor="@color/appColor" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تحدث مع اطباء مناوبين علي مدار الساعة لمساعدتك انت وعائلتك"
+        android:textStyle="bold"
+        android:layout_below="@id/dotIndicator"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_round_orang"
+        android:paddingHorizontal="30dp"
+        android:src="@drawable/ic_irrow" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        android:paddingHorizontal="30dp"
+        android:src="@drawable/ic_irrow"
+        android:text="@string/skip" />
+
+</RelativeLayout>

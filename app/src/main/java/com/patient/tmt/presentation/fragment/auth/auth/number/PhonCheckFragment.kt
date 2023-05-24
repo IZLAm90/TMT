@@ -6,29 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.patient.base.BaseFragment
+import com.patient.tmt.R
+import com.patient.tmt.databinding.FragmentLoginBinding
 import com.patient.tmt.databinding.FragmentPhonCheckBinding
 
 
-class PhonCheckFragment : Fragment() {
-    lateinit var binding:FragmentPhonCheckBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentPhonCheckBinding.inflate(inflater,container,false)
-        return binding.root
-    }
+class PhonCheckFragment :  BaseFragment(R.layout.fragment_phon_check) {
+   private lateinit var binding:FragmentPhonCheckBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding = FragmentPhonCheckBinding.bind(view)
         binding.apply {
-            conifermNum.setOnClickListener {
-                findNavController().navigateUp()
+            confirmNum.setOnClickListener {
+                findNavController().navigate(R.id.action_otpFragment_to_loginFragment)
             }
         }
     }
