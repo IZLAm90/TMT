@@ -36,7 +36,9 @@
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
     <string name="InstantConsultation">Instant Consultation</string>
-
+    <string name="home">Home</string>
+    <string name="notifications">Notifiaction</string>
+    <string name="profile">Profile</string>
 
 
 </resources>
