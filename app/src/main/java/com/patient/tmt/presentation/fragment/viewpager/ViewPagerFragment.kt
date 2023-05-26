@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.patient.base.BaseFragment
 import com.patient.data.model.ModelMainViewPager
 import com.patient.tmt.R
@@ -30,6 +31,13 @@ class ViewPagerFragment : BaseFragment(R.layout.fragment_view_pager) {
             mainViewPager.adapter =adapter
             adapter.AddAll(list)
             dotIndicator.setViewPager2(mainViewPager)
+            move.setOnClickListener {
+             mainViewPager.currentItem  = mainViewPager.currentItem+1
+            }
+            skip.setOnClickListener {
+                findNavController().navigate(R.id.action_viewPagerFragment_to_main_navigation)
+            }
+
         }
 
     }

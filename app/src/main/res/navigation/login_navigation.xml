@@ -60,5 +60,9 @@
         android:id="@+id/viewPagerFragment"
         android:name="com.patient.tmt.presentation.fragment.viewpager.ViewPagerFragment"
         android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" />
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_main_navigation"
+            app:destination="@id/main_navigation" />
+    </fragment>
 </navigation>
