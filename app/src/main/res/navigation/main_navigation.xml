@@ -5,15 +5,18 @@
     android:id="@+id/main_navigation"
     app:startDestination="@id/homeOfNavigationFragment">
 
-
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.patient.tmt.presentation.fragment.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/homeOfNavigationFragment"
         android:name="com.patient.tmt.presentation.fragment.homenavigation.HomeOfNavigationFragment"
         android:label="fragment_home_of_navigation"
-        tools:layout="@layout/fragment_home_of_navigation" />
+        tools:layout="@layout/fragment_home_of_navigation" >
+        <action
+            android:id="@+id/action_homeOfNavigationFragment_to_medicalSpecialtiesFragment"
+            app:destination="@id/medicalSpecialtiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicalSpecialtiesFragment"
+        android:name="com.patient.tmt.presentation.fragment.MedicalSpecialtiesFragment"
+        android:label="fragment_mediacl_specialties"
+        tools:layout="@layout/fragment_mediacl_specialties" />
 </navigation>
