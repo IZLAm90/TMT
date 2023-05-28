@@ -1,5 +1,6 @@
 package com.patient.tmt.presentation.fragment.viewpager
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import com.patient.base.BaseFragment
 import com.patient.data.model.ModelMainViewPager
 import com.patient.tmt.R
 import com.patient.tmt.databinding.FragmentViewPagerBinding
+import com.patient.tmt.presentation.activity.main.MainActivity
 import com.patient.tmt.presentation.adapter.MainViewPageAdapter
 
 
@@ -35,7 +37,7 @@ class ViewPagerFragment : BaseFragment(R.layout.fragment_view_pager) {
              mainViewPager.currentItem  = mainViewPager.currentItem+1
             }
             skip.setOnClickListener {
-                findNavController().navigate(R.id.action_viewPagerFragment_to_main_navigation)
+               startActivity(Intent(requireContext(),MainActivity::class.java))
             }
 
         }

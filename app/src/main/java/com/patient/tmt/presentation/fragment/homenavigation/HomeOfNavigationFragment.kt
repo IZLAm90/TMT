@@ -9,8 +9,9 @@ import androidx.navigation.fragment.findNavController
 import com.patient.base.BaseFragment
 import com.patient.tmt.R
 import com.patient.tmt.databinding.FragmentHomeOfNavigationBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class HomeOfNavigationFragment : BaseFragment(R.layout.fragment_home_of_navigation) {
 
     private lateinit var binding : FragmentHomeOfNavigationBinding

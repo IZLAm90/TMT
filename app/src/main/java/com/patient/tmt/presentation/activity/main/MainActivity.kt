@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import com.patient.base.BaseActivity
 import com.patient.tmt.R
 import com.patient.tmt.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class MainActivity : BaseActivity(R.layout.activity_main) {
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity() {
    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

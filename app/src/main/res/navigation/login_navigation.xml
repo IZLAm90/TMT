@@ -13,9 +13,9 @@
         <action
             android:id="@+id/action_loginFragment_to_sigenUpFragment"
             app:destination="@id/sigenUpFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_main_navigation"
-            app:destination="@id/main_navigation" />
+<!--        <action-->
+<!--            android:id="@+id/action_loginFragment_to_main_navigation"-->
+<!--            app:destination="@id/main_navigation" />-->
         <action
             android:id="@+id/action_loginFragment_to_forgetPasswordFragment2"
             app:destination="@id/forgetPasswordFragment2" />
@@ -61,8 +61,6 @@
         android:name="com.patient.tmt.presentation.fragment.viewpager.ViewPagerFragment"
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager" >
-        <action
-            android:id="@+id/action_viewPagerFragment_to_main_navigation"
-            app:destination="@id/main_navigation" />
+
     </fragment>
 </navigation>

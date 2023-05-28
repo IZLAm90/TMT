@@ -12,7 +12,7 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >@color/appColor</item>
+        <item name="android:statusBarColor" >@color/white</item>
 
         <item name="pinViewStyle">@style/PinWidget.PinView</item>
         <!-- Customize your theme here. -->
