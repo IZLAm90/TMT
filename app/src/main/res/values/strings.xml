@@ -12,10 +12,15 @@
     <string name="wrong">Wrong</string>
     <string name="enterTheUserName">Enter The User Name</string>
     <string name="man">man</string>
+    <string name="me">لي</string>
+    <string name="gender">gender</string>
+    <string name="antherPerson">لشخص اخر</string>
     <string name="dataOfPairth">تاريخ الميلاد</string>
     <string name="forgetData">Did you Forget user name or password</string>
     <string name="noAccount"> you don\'t have an account ?</string>
     <string name="createNewAccount"> تسجيل حساب جديد</string>
+    <string name="Buy">ادفع الان</string>
+    <string name="askForcons">اطلب استشارة فورية الان</string>
     <string name="areYouDoc"> Are You A Doctor ?</string>
     <string name="docApp"> Download Doctor  App</string>
     <string name="English">English</string>
@@ -37,9 +42,14 @@
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
     <string name="InstantConsultation">Instant Consultation</string>
+    <string name="discripeYourProblem">اكتب وصف مختصر لاستشارتك (اختياري):</string>
+    <string name="foryouOrnot">هل الاستشارة لك ام لاحد غيرك</string>
     <string name="home">Home</string>
     <string name="notifications">Notifiaction</string>
     <string name="profile">Profile</string>
+    <string name="age">age</string>
+    <string name="payment">payment</string>
+
 
 
 </resources>

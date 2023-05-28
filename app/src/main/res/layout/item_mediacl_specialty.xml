@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="5dp"
-    app:cardPreventCornerOverlap="true">
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:id="@+id/specialityBG"
+    android:background="@drawable/shape_round_out_line">
 
-    <LinearLayout
-        android:id="@+id/specialityBG"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/background_rounded_rose"
-        >
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imgSpecial"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="120dp"
             android:padding="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/testimg"
+            android:src="@drawable/speciality_icon"
             app:shapeAppearance="@style/roundedImage" />
 
         <TextView
@@ -31,6 +25,6 @@
             android:text="@string/getHelp"
             android:gravity="center"
             />
-    </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+
+</LinearLayout>

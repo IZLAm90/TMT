@@ -13,10 +13,27 @@
         <action
             android:id="@+id/action_homeOfNavigationFragment_to_medicalSpecialtiesFragment"
             app:destination="@id/medicalSpecialtiesFragment" />
+        <action
+            android:id="@+id/action_homeOfNavigationFragment_to_instantConsultationFragment"
+            app:destination="@id/instantConsultationFragment" />
     </fragment>
     <fragment
         android:id="@+id/medicalSpecialtiesFragment"
         android:name="com.patient.tmt.presentation.fragment.MedicalSpecialtiesFragment"
         android:label="fragment_mediacl_specialties"
         tools:layout="@layout/fragment_mediacl_specialties" />
+    <fragment
+        android:id="@+id/instantConsultationFragment"
+        android:name="com.patient.tmt.presentation.fragment.consultation.InstantConsultationFragment"
+        android:label="fragment_instant_consultation"
+        tools:layout="@layout/fragment_instant_consultation" >
+        <action
+            android:id="@+id/action_instantConsultationFragment_to_baymentFragment"
+            app:destination="@id/baymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baymentFragment"
+        android:name="com.patient.tmt.presentation.fragment.payment.BaymentFragment"
+        android:label="fragment_bayment"
+        tools:layout="@layout/fragment_bayment" />
 </navigation>

@@ -3,10 +3,12 @@
     <font
         android:font="@font/tajwal"
         android:fontStyle="normal"
-        android:fontWeight="400" />
+        android:fontWeight="8" />
     <font
         android:font="@font/tajwal"
         android:fontStyle="italic"
-        android:fontWeight="400" />
+        android:fontWeight="10"
+        />
+
 
 </font-family>

@@ -24,6 +24,10 @@ class HomeOfNavigationFragment : BaseFragment(R.layout.fragment_home_of_navigati
             SpecialToke.setOnClickListener {
                 findNavController().navigate(R.id.action_homeOfNavigationFragment_to_medicalSpecialtiesFragment)
             }
+            consaltant.setOnClickListener {
+                findNavController().navigate(R.id.action_homeOfNavigationFragment_to_instantConsultationFragment)
+            }
+
         }
 
     }

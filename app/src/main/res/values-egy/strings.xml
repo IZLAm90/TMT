@@ -10,6 +10,10 @@
     <string name="Email">Email</string>
     <string name="continuation">continue</string>
     <string name="man">man</string>
+    <string name="me">لي</string>
+    <string name="gender">الجنس</string>
+    <string name="askForcons">اطلب استشارة فورية الان</string>
+    <string name="antherPerson">لشخص اخر</string>
     <string name="dataOfPairth">تاريخ الميلاد</string>
     <string name="forgetPass"> نسيت كلمة المرور</string>
     <string name="wrong">خطأ</string>
@@ -35,12 +39,17 @@
     <string name="speciality"> التخصصات الدقيقة</string>
     <string name="askForSpeciality"> اطلب استشارة طبية متخصصة في اكثر من 30 عيادة مختلفة يخدمها نخبة من الاخصائيين و الاستشاريين</string>
     <string name="getHelp">تحدث الان</string>
+    <string name="foryouOrnot">هل الاستشارة لك ام لاحد غيرك</string>
     <string name="phoneNumber">رقم الهاتف</string>
     <string name="defaultCodeNum">+966</string>
     <string name="NumConfirm">ارسال رمز التوثيق</string>
     <string name="home">Home</string>
+    <string name="discripeYourProblem">اكتب وصف مختصر لاستشارتك (اختياري):</string>
     <string name="notifications">Notifiaction</string>
     <string name="profile">Profile</string>
+    <string name="age">العمر</string>
+    <string name="payment">الدفع</string>
+    <string name="Buy">ادفع الان</string>
 
 
 </resources>

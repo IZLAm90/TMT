@@ -2,10 +2,10 @@
     <!-- Base application theme. -->
     <style name="Theme.TMT" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/appColor</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
-        <item name="android:fontFamily">@font/tajwal</item>
+<!--        <item name="android:fontFamily">@font/tajwal</item>-->
 
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

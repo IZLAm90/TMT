@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.TMT" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/appColor</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -11,10 +11,19 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/white</item>
-        <!--        <item name="android:windowTranslucentStatus">true</item>-->
-        <item name="android:fontFamily">@font/tajwal</item>
-        <!-- Customize your theme here. -->
         <item name="pinViewStyle">@style/PinWidget.PinView</item>
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/appColor</item>
+        <item name="android:textColorSecondary">@color/textColor</item> <!-- Set unselected icon color -->
+
     </style>
 
     <style name="roundedImage" parent="">
