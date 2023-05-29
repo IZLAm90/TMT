@@ -34,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:fontFamily="@font/tajwal"
         android:text="@string/yourHealth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,6 +58,7 @@
             android:layout_marginHorizontal="35dp"
             android:gravity="start"
             android:text="@string/login"
+            android:fontFamily="@font/tajwal"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -68,6 +70,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
+            android:fontFamily="@font/tajwal"
             android:background="@drawable/shape_round_white"
             android:elevation="1dp"
             android:hint="@string/username"
@@ -88,6 +91,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
+            android:fontFamily="@font/tajwal"
             android:background="@drawable/shape_round_white"
             android:elevation="1dp"
             android:hint="@string/password"
@@ -111,6 +115,7 @@
             android:background="@drawable/shape_round_orang"
             android:gravity="center"
             android:text="@string/login"
+            android:fontFamily="@font/tajwal"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -119,33 +124,34 @@
             android:id="@+id/forgetPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
+            android:fontFamily="@font/tajwal"
             android:text="@string/forgetData"
             android:textColor="@color/appColor"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textSize="12sp"
+            android:textStyle="normal" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="@string/noAccount"
+            android:fontFamily="@font/tajwal"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="12sp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/newAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:fontFamily="@font/tajwal"
             android:gravity="center"
             android:text="@string/createNewAccount"
             android:textColor="@color/appColor"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="12sp"
+            android:textStyle="normal" />
 
     </LinearLayout>
 
@@ -156,8 +162,9 @@
         android:gravity="center"
         android:text="@string/areYouDoc"
         android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/tajwal"
         app:layout_constraintBottom_toTopOf="@+id/dowan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -170,8 +177,9 @@
         android:gravity="center"
         android:text="@string/docApp"
         android:textColor="@color/appColor"
-        android:textSize="14sp"
-        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/tajwal"
         app:layout_constraintBottom_toTopOf="@+id/lang"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -195,8 +203,9 @@
             android:gravity="center"
             android:paddingHorizontal="35dp"
             android:text="@string/English"
+            android:fontFamily="@font/tajwal"
             android:textColor="@color/textColor"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <TextView
@@ -208,8 +217,9 @@
             android:gravity="center"
             android:paddingHorizontal="35dp"
             android:text="@string/AR"
+            android:fontFamily="@font/tajwal"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <TextView
@@ -221,8 +231,9 @@
             android:gravity="center"
             android:paddingHorizontal="35dp"
             android:text="@string/Tr"
+            android:fontFamily="@font/tajwal"
             android:textColor="@color/textColor"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
 

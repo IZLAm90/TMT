@@ -33,8 +33,13 @@
     <string name="entrOtpTp"> أرسل إلى </string>
     <string name="reSend"> أرسل إلى </string>
     <string name="speciality"> التخصصات الدقيقة</string>
+    <string name="speedCare">الرعاية العاجلة</string>
+    <string name="Spiecificspeciality">التخصصات الدقيقة</string>
     <string name="weCanHelp">كيف يمكننا مساعدتك ؟</string>
     <string name="skip"> تخطي</string>
+    <string name="HealthCare"> العناية بالصحة</string>
+    <string name="mentality">اطلب استشارة طب نفسي او جلسة علاج سلوكي من نخبة من الاطباء النفسيين و المعالجين السلوكيين</string>
+    <string name="Psychologicalhealth"> الصحة النفسية</string>
     <string name="askForSpeciality"> اطلب استشارة طبية متخصصة في اكثر من 30 عيادة مختلفة يخدمها نخبة من الاخصائيين و الاستشاريين</string>
     <string name="getHelp">تحدث الان</string>
     <string name="yourHealth">Your Health Our Priority</string>
@@ -45,6 +50,7 @@
     <string name="discripeYourProblem">اكتب وصف مختصر لاستشارتك (اختياري):</string>
     <string name="foryouOrnot">هل الاستشارة لك ام لاحد غيرك</string>
     <string name="home">Home</string>
+    <string name="healthyDetails">جلسات مجدولة اسبوعيا مع خبراء بناء نمط صحي و لتحقيق اهدافك العلاجية المختلفة</string>
     <string name="notifications">Notifiaction</string>
     <string name="profile">Profile</string>
     <string name="age">age</string>

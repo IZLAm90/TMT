@@ -35,10 +35,15 @@
     <string name="InstantConsultation">استشارة فورية</string>
     <string name="entrOtpTp"> أرسل إلى </string>
     <string name="skip"> Skip</string>
+    <string name="mentality">اطلب استشارة طب نفسي او جلسة علاج سلوكي من نخبة من الاطباء النفسيين و المعالجين السلوكيين</string>
+    <string name="HealthCare"> العناية بالصحة</string>
+    <string name="Spiecificspeciality">التخصصات الدقيقة</string>
     <string name="weCanHelp">كيف يمكننا مساعدتك ؟</string>
     <string name="speciality"> التخصصات الدقيقة</string>
+    <string name="Psychologicalhealth"> الصحة النفسية</string>
     <string name="askForSpeciality"> اطلب استشارة طبية متخصصة في اكثر من 30 عيادة مختلفة يخدمها نخبة من الاخصائيين و الاستشاريين</string>
     <string name="getHelp">تحدث الان</string>
+    <string name="speedCare">الرعاية العاجلة</string>
     <string name="foryouOrnot">هل الاستشارة لك ام لاحد غيرك</string>
     <string name="phoneNumber">رقم الهاتف</string>
     <string name="defaultCodeNum">+966</string>
@@ -47,6 +52,7 @@
     <string name="discripeYourProblem">اكتب وصف مختصر لاستشارتك (اختياري):</string>
     <string name="notifications">Notifiaction</string>
     <string name="profile">Profile</string>
+    <string name="healthyDetails">جلسات مجدولة اسبوعيا مع خبراء بناء نمط صحي و لتحقيق اهدافك العلاجية المختلفة</string>
     <string name="age">العمر</string>
     <string name="payment">الدفع</string>
     <string name="Buy">ادفع الان</string>

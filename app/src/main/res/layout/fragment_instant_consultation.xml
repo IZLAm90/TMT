@@ -24,6 +24,7 @@
             android:layout_marginStart="10dp"
             android:gravity="right"
             android:padding="10dp"
+            android:fontFamily="@font/tajwal"
             android:text="@string/InstantConsultation"
             android:textColor="@color/textColor"
             android:textSize="18sp"
@@ -37,10 +38,11 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="30dp"
         android:padding="10dp"
+        android:fontFamily="@font/tajwal"
         android:text="@string/discripeYourProblem"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="14sp"
+        android:textStyle="normal" />
 
     <EditText
         android:layout_width="match_parent"
@@ -48,6 +50,7 @@
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/bakground_round_outling_white"
         android:imeOptions="actionDone"
+        android:fontFamily="@font/tajwal"
         />
 
     <TextView
@@ -58,10 +61,11 @@
         android:layout_marginEnd="30dp"
         android:layout_marginTop="5dp"
         android:padding="10dp"
+        android:fontFamily="@font/tajwal"
         android:text="@string/foryouOrnot"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="14sp"
+        android:textStyle="normal" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,6 +79,7 @@
             android:layout_gravity="center"
             android:drawablePadding="4dp"
             android:gravity="center"
+            android:fontFamily="@font/tajwal"
             android:layout_margin="5dp"
             android:text="@string/me" />
         <ImageView
@@ -100,6 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:drawablePadding="4dp"
+            android:fontFamily="@font/tajwal"
             android:gravity="center"
             android:layout_margin="5dp"
             android:text="@string/antherPerson" />
@@ -122,6 +128,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginTop="5dp"
         android:padding="10dp"
+        android:fontFamily="@font/tajwal"
         android:text="@string/gender"
         android:textColor="@color/textColor"
         android:textSize="14sp"
@@ -141,6 +148,7 @@
             android:layout_gravity="center"
             android:drawablePadding="4dp"
             android:gravity="center"
+            android:fontFamily="@font/tajwal"
             android:layout_margin="5dp"
             android:text="@string/me" />
         <ImageView
@@ -167,6 +175,7 @@
             android:layout_gravity="center"
             android:drawablePadding="4dp"
             android:gravity="center"
+            android:fontFamily="@font/tajwal"
             android:layout_margin="5dp"
             android:text="@string/antherPerson" />
         <ImageView
@@ -188,6 +197,7 @@
         android:layout_marginTop="5dp"
         android:padding="10dp"
         android:text="@string/age"
+        android:fontFamily="@font/tajwal"
         android:textColor="@color/textColor"
         android:textSize="14sp"
         android:textFontWeight="100"
@@ -201,6 +211,7 @@
         android:layout_marginTop="10dp"
         android:text="20/10/2022"
         android:gravity="center"
+        android:fontFamily="@font/tajwal"
         android:textColor="@color/textColor"
         />
 
@@ -213,8 +224,9 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/shape_round_orang"
         android:gravity="center"
+        android:fontFamily="@font/tajwal"
         android:text="@string/askForcons"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 </LinearLayout>

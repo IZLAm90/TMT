@@ -20,7 +20,7 @@
             android:src="@drawable/back" />
 
         <TextView
-
+            android:fontFamily="@font/tajwal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -48,6 +48,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingStart="15dp"
+            android:fontFamily="@font/tajwal"
             android:paddingEnd="15dp"
             android:hint="@string/defaultCodeNum"
             android:textColor="@color/textColor"
@@ -69,9 +70,9 @@
             android:hint="@string/phoneNumber"
             android:gravity="center"
             android:textSize="15sp"
+            android:fontFamily="@font/tajwal"
             android:textColor="@color/textColor"
             android:inputType="number" />
-
 
     </LinearLayout>
 
@@ -84,6 +85,7 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/shape_round_orang"
         android:gravity="center"
+        android:fontFamily="@font/tajwal"
         android:text="@string/NumConfirm"
         android:textColor="@color/white"
         android:textSize="18sp"

@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:text="تحدث مع اطباء مناوبين علي مدار الساعة لمساعدتك انت وعائلتك"
         android:textStyle="bold"
+        android:fontFamily="@font/tajwal"
         android:layout_below="@id/dotIndicator"
         android:layout_marginHorizontal="40dp"
         android:textSize="17sp"

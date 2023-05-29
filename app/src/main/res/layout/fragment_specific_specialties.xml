@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:fontFamily="@font/tajwal"
             android:layout_marginStart="10dp"
             android:gravity="right"
             android:padding="10dp"

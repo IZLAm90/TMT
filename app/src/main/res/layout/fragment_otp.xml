@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/tajwal"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -39,6 +40,7 @@
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:padding="10dp"
+        android:fontFamily="@font/tajwal"
         android:text="@string/confirm"
         android:textColor="@color/textColor"
         android:textSize="18sp"
@@ -49,6 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:gravity="center"
+        android:fontFamily="@font/tajwal"
         android:padding="5dp"
         android:hint="@string/entrOtp"
         android:textColor="@color/textColor"
@@ -61,6 +64,7 @@
         android:layout_gravity="end"
         android:gravity="center"
         android:padding="5dp"
+        android:fontFamily="@font/tajwal"
         android:hint="@string/entrOtpTp"
         android:textColor="@color/textColor"
         android:textSize="14sp"
@@ -102,6 +106,7 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/shape_round_orang"
         android:gravity="center"
+        android:fontFamily="@font/tajwal"
         android:text="@string/NumConfirm"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -110,6 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:fontFamily="@font/tajwal"
         android:layout_marginTop="5dp"
         android:orientation="horizontal"
         >

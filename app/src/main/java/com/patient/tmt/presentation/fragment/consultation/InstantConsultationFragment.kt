@@ -20,8 +20,6 @@ class InstantConsultationFragment : BaseFragment(R.layout.fragment_instant_consu
         binding.apply {
             consaltaion.setOnClickListener { findNavController().navigate(R.id.action_instantConsultationFragment_to_baymentFragment) }
         }
-
-
     }
 
 
