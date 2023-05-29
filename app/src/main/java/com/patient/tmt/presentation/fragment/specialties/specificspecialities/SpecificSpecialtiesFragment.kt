@@ -1,4 +1,4 @@
-package com.patient.tmt.presentation.fragment
+package com.patient.tmt.presentation.fragment.specialties.specificspecialities
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,19 +8,16 @@ import android.view.ViewGroup
 import com.patient.tmt.R
 
 
-class MedicalSpecialtiesFragment : Fragment() {
+class SpecificSpecialtiesFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mediacl_specialties, container, false)
+        return inflater.inflate(R.layout.fragment_specific_specialties, container, false)
     }
+
 
 }

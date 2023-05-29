@@ -220,16 +220,12 @@
         android:background="@drawable/bakground_round_outling_white"
         android:layout_marginHorizontal="20dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="50dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_marginHorizontal="40dp"
-            android:text="@string/payment"
-            />
-        <View
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
+            android:src="@drawable/mada"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -237,7 +233,9 @@
             android:gravity="center"
             android:layout_marginHorizontal="40dp"
             android:text="@string/payment"
-            android:textColor="@color/appColor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
             />
     </LinearLayout>
 
@@ -248,16 +246,12 @@
         android:background="@drawable/bakground_round_outling_white"
         android:layout_marginHorizontal="20dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="50dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_marginHorizontal="40dp"
-            android:text="@string/payment"
-            />
-        <View
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
+            android:src="@drawable/mada"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -265,7 +259,9 @@
             android:gravity="center"
             android:layout_marginHorizontal="40dp"
             android:text="@string/payment"
-            android:textColor="@color/appColor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
             />
     </LinearLayout>
 
@@ -276,24 +272,23 @@
         android:background="@drawable/bakground_round_outling_white"
         android:layout_marginHorizontal="20dp"
         >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/mada"
+            />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_marginHorizontal="40dp"
             android:text="@string/payment"
-            />
-        <View
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_marginHorizontal="40dp"
-            android:text="@string/payment"
-            android:textColor="@color/appColor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
             />
     </LinearLayout>
 

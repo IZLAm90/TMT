@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.patient.tmt.R
 import com.patient.tmt.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
-//27
+//8
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
    private lateinit var binding: ActivityMainBinding

@@ -19,9 +19,13 @@
     </fragment>
     <fragment
         android:id="@+id/medicalSpecialtiesFragment"
-        android:name="com.patient.tmt.presentation.fragment.MedicalSpecialtiesFragment"
+        android:name="com.patient.tmt.presentation.fragment.specialties.MedicalSpecialtiesFragment"
         android:label="fragment_mediacl_specialties"
-        tools:layout="@layout/fragment_mediacl_specialties" />
+        tools:layout="@layout/fragment_mediacl_specialties" >
+        <action
+            android:id="@+id/action_medicalSpecialtiesFragment_to_specificSpecialtiesFragment"
+            app:destination="@id/specificSpecialtiesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/instantConsultationFragment"
         android:name="com.patient.tmt.presentation.fragment.consultation.InstantConsultationFragment"
@@ -36,4 +40,18 @@
         android:name="com.patient.tmt.presentation.fragment.payment.BaymentFragment"
         android:label="fragment_bayment"
         tools:layout="@layout/fragment_bayment" />
+    <fragment
+        android:id="@+id/specificSpecialtiesFragment"
+        android:name="com.patient.tmt.presentation.fragment.specialties.specificspecialities.SpecificSpecialtiesFragment"
+        android:label="fragment_specific_specialties"
+        tools:layout="@layout/fragment_specific_specialties" >
+        <action
+            android:id="@+id/action_specificSpecialtiesFragment_to_doctorDetailsFragment"
+            app:destination="@id/doctorDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorDetailsFragment"
+        android:name="com.patient.tmt.presentation.fragment.specialties.details.DoctorDetailsFragment"
+        android:label="fragment_doctor_details"
+        tools:layout="@layout/fragment_doctor_details" />
 </navigation>

@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
-    tools:context=".presentation.fragment.specialties.MedicalSpecialtiesFragment">
+    tools:context=".presentation.fragment.specialties.specificspecialities.SpecificSpecialtiesFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="5dp"
-        android:paddingHorizontal="15dp">
+        android:padding="5dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -23,10 +21,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
+            android:layout_gravity="right"
             android:layout_marginStart="10dp"
+            android:gravity="right"
             android:padding="10dp"
-            android:text="@string/MediaclSpecialties"
+            android:text="@string/InstantConsultation"
             android:textColor="@color/textColor"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -35,8 +34,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:spanCount="3"
-        tools:listitem="@layout/item_mediacl_specialty"
+        tools:listitem="@layout/item_specific_specialties"
         />
+
+
 </LinearLayout>
