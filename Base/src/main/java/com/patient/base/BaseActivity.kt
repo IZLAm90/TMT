@@ -23,6 +23,7 @@ import kotlinx.coroutines.launch
 abstract class BaseActivity(private val layoutResource: Int) : AppCompatActivity() {
     private var viewBase: ActivityBaseBinding? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewBase = ActivityBaseBinding.inflate(layoutInflater)
