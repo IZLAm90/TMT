@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.patient.base.BaseFragment
@@ -21,7 +22,7 @@ import kotlinx.coroutines.launch
 class MedicalSpecialtiesFragment : BaseFragment(R.layout.fragment_mediacl_specialties) {
    private lateinit var binding :FragmentMediaclSpecialtiesBinding
    private val adapter = MedicalSpecialtiesAdapter()
-   private val viewModel by activityViewModels<SpecialitiesViewMode> ()
+   private val viewModel by viewModels<SpecialitiesViewMode> ()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMediaclSpecialtiesBinding.bind(view)
@@ -31,13 +32,16 @@ class MedicalSpecialtiesFragment : BaseFragment(R.layout.fragment_mediacl_specia
             adapter.OnItemSelected={postion->
                 findNavController().navigate(R.id.action_medicalSpecialtiesFragment_to_specificSpecialtiesFragment)
             }
+            back.setOnClickListener{
+                findNavController().navigateUp()
+            }
         }
         lifecycleScope.launch {
             viewModel.dataFlow.collect {
                 adapter.AddAll(it)
              Log.d("islam", "onViewCreated test one  : ${it} ")
-
             }
         }
+
     }
 }

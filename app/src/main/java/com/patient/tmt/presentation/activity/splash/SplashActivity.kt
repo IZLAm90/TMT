@@ -21,6 +21,7 @@ class SplashActivity : BaseActivity(R.layout.fragment_splash) {
             delay(1000)
             withContext(Dispatchers.Main){
                 startActivity(LoginActivity::class.java)
+                finish()
             }
         }
     }

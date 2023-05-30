@@ -38,6 +38,7 @@ class ViewPagerFragment : BaseFragment(R.layout.fragment_view_pager) {
             }
             skip.setOnClickListener {
                startActivity(Intent(requireContext(),MainActivity::class.java))
+                activity?.finish()
             }
 
         }

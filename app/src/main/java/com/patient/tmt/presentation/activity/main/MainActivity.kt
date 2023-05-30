@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
             navController.addOnDestinationChangedListener{controller,destination,arguments->
                 if (destination.id == R.id.instantConsultationFragment || destination.id ==R.id.medicalSpecialtiesFragment){
                     binding.navView.visibility = View.GONE
+                }else{
+                    binding.navView.visibility = View.VISIBLE
+
                 }
 
             }

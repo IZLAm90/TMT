@@ -18,6 +18,7 @@
         <activity
             android:name=".presentation.activity.login.LoginActivity"
             android:exported="true"
+            android:launchMode="singleInstance"
             android:theme="@style/AppTheme.TransparentStatusBarLogin"
             android:screenOrientation="portrait"
             />
@@ -37,6 +38,7 @@
         <activity
             android:name=".presentation.activity.main.MainActivity"
             android:exported="true"
+            android:launchMode="singleTask"
             android:theme="@style/Theme.TMT"
             android:screenOrientation="portrait"
             >
