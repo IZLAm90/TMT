@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class MedicalRepoImp @Inject constructor(private val api: UserApi)  : MedicalSpecialtyRepo{
     override suspend fun getSpecialtyData(): ArrayList<MedicalSecialtyModel> {
-     val mediacal :ArrayList<MedicalSecialtyModel> = arrayListOf()
+     var mediacal :ArrayList<MedicalSecialtyModel> = arrayListOf()
         mediacal.add(MedicalSecialtyModel("islam", 0))
         mediacal.add(MedicalSecialtyModel("ahmed", 0))
         mediacal.add(MedicalSecialtyModel("ali", 0))

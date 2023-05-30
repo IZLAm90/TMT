@@ -7,18 +7,37 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.patient.base.BaseFragment
 import com.patient.tmt.R
 import com.patient.tmt.databinding.FragmentMediaclSpecialtiesBinding
+import com.patient.tmt.presentation.adapter.MedicalSpecialtiesAdapter
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MedicalSpecialtiesFragment : BaseFragment(R.layout.fragment_mediacl_specialties) {
    private lateinit var binding :FragmentMediaclSpecialtiesBinding
-//   private val viewModel by activityViewModels<SpecialitiesViewMode> ()
+   private val adapter = MedicalSpecialtiesAdapter()
+   private val viewModel by activityViewModels<SpecialitiesViewMode> ()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMediaclSpecialtiesBinding.bind(view)
-//        Log.d("islam", "onViewCreated test one  : ${viewModel.dataFlow} ")
+        binding.apply {
+            rvMedicalSpecialties.setHasFixedSize(false)
+            rvMedicalSpecialties.adapter=adapter
+            adapter.OnItemSelected={postion->
+                findNavController().navigate(R.id.action_medicalSpecialtiesFragment_to_specificSpecialtiesFragment)
+            }
+        }
+        lifecycleScope.launch {
+            viewModel.dataFlow.collect {
+                adapter.AddAll(it)
+             Log.d("islam", "onViewCreated test one  : ${it} ")
+
+            }
+        }
     }
 }

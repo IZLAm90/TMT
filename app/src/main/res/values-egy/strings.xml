@@ -31,7 +31,7 @@
     <string name="reSend"> إذا لم تتلق رمزًا! إعادة إرسال </string>
     <string name="confirm">توثيق هاتفك </string>
     <string name="entrOtp">الرجاء كتابة رمز التحقق </string>
-    <string name="MediaclSpecialties">التخصصات الطبية</string>
+    <string name="MediaclSpecialties">Medical Specialties</string>
     <string name="InstantConsultation">استشارة فورية</string>
     <string name="entrOtpTp"> أرسل إلى </string>
     <string name="skip"> Skip</string>

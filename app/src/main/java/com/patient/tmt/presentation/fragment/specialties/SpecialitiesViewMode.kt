@@ -1,5 +1,6 @@
 package com.patient.tmt.presentation.fragment.specialties
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.patient.data.model.MedicalSecialtyModel
@@ -19,6 +20,7 @@ class SpecialitiesViewMode @Inject constructor(private val useCase: MedicalUseCa
     }
     private  fun getMedicalData(){
         viewModelScope.launch {
+            Log.d("islam", "getMedicalData: ${useCase.getMdedicalData()}")
         _dataFlow.emit(useCase.getMdedicalData())
         }
     }
