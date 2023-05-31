@@ -6,10 +6,10 @@
     <string name="firstName">الاسم الأول</string>
     <string name="lastName">اسم العائلة</string>
     <string name="usernameEn">اسم المستخدم (بالانجليزية)</string>
-    <string name="password">PassWord</string>
-    <string name="Email">Email</string>
+    <string name="password">كلمه المرور </string>
+    <string name="Email">البريد الإلكترونى</string>
     <string name="continuation">استمر</string>
-    <string name="man">man</string>
+    <string name="man">رجل</string>
     <string name="me">لي</string>
     <string name="gender">الجنس</string>
     <string name="askForcons">اطلب استشارة فورية الان</string>
@@ -18,8 +18,8 @@
     <string name="forgetPass"> نسيت كلمة المرور</string>
     <string name="wrong">خطأ</string>
     <string name="enterTheUserName">يرجي ادخال اسم المستخدم</string>
-    <string name="forgetData">Did you Forget user name or password</string>
-    <string name="noAccount"> you don\'t have an account ?</string>
+    <string name="forgetData">نسيت اسم المستخدم او كلمة المرور؟</string>
+    <string name="noAccount"> لا يوجد لديك حساب ؟</string>
     <string name="createNewAccount"> تسجيل حساب جديد</string>
     <string name="areYouDoc">هل انت طبيب ؟</string>
     <string name="docApp"> حمل تطبيق الاطباء</string>
@@ -50,8 +50,8 @@
     <string name="NumConfirm">ارسال رمز التوثيق</string>
     <string name="home">Home</string>
     <string name="discripeYourProblem">اكتب وصف مختصر لاستشارتك (اختياري):</string>
-    <string name="notifications">Notifiaction</string>
-    <string name="profile">Profile</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="profile">الحساب الشخصى</string>
     <string name="healthyDetails">جلسات مجدولة اسبوعيا مع خبراء بناء نمط صحي و لتحقيق اهدافك العلاجية المختلفة</string>
     <string name="age">العمر</string>
     <string name="payment">الدفع</string>
