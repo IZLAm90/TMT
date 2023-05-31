@@ -6,7 +6,7 @@
     <string name="firstName">First Name</string>
     <string name="lastName">Last Name</string>
     <string name="password">PassWord</string>
-    <string name="continuation">استمرار</string>
+    <string name="continuation">continue</string>
     <string name="forgetPass"> نسيت كلمة المرور</string>
     <string name="Email">الايميل</string>
     <string name="wrong">Wrong</string>

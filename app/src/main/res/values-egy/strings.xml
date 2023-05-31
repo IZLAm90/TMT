@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TMT</string>
-    <string name="login">Login</string>
-    <string name="username">User Name</string>
-    <string name="firstName">First Name</string>
-    <string name="lastName">Last Name</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="firstName">الاسم الأول</string>
+    <string name="lastName">اسم العائلة</string>
     <string name="usernameEn">اسم المستخدم (بالانجليزية)</string>
     <string name="password">PassWord</string>
     <string name="Email">Email</string>
-    <string name="continuation">continue</string>
+    <string name="continuation">استمر</string>
     <string name="man">man</string>
     <string name="me">لي</string>
     <string name="gender">الجنس</string>
