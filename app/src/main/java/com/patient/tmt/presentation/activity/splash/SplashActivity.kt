@@ -1,5 +1,6 @@
 package com.patient.tmt.presentation.activity.splash
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import com.patient.base.BaseActivity
@@ -20,10 +21,14 @@ class SplashActivity : BaseActivity(R.layout.fragment_splash) {
         lifecycleScope.launch {
             delay(1000)
             withContext(Dispatchers.Main){
-                startActivity(LoginActivity::class.java)
+                val intent = Intent(this@SplashActivity,LoginActivity::class.java)
+                startActivity(intent)
                 finish()
             }
         }
+    }
+    companion object{
+        var lang="ar"
     }
 }
 

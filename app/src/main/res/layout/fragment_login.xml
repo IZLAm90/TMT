@@ -180,12 +180,12 @@
         android:textSize="12sp"
         android:textStyle="normal"
         android:fontFamily="@font/tajwal"
-        app:layout_constraintBottom_toTopOf="@+id/lang"
+        app:layout_constraintBottom_toTopOf="@+id/lange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:id="@+id/lang"
+        android:id="@+id/lange"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="bottom"

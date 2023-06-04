@@ -17,18 +17,21 @@ import com.patient.tmt.databinding.FragmentLoginBinding
 import com.patient.tmt.helper.MyContextWrapper
 import com.patient.tmt.helper.setTextWithDifferentColors
 import com.patient.tmt.presentation.activity.login.LoginActivity
-
-
+import com.patient.tmt.presentation.activity.splash.SplashActivity.Companion.lang
+ const val TAG="IslamLoginFragment"
 class LoginFragment : BaseFragment(R.layout.fragment_login) {
     private lateinit var binding: FragmentLoginBinding
-    val prefrence = activity?.applicationContext?.let { PreferencesGateway(it) }
+    private lateinit var preferenc :PreferencesGateway
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentLoginBinding.bind(view)
+        preferenc= activity?.applicationContext?.let { PreferencesGateway(it) }!!
         binding.apply {
             val colors = intArrayOf(Color.WHITE, resources.getColor(R.color.appColor))
             yourHealth.setTextWithDifferentColors(resources.getString(R.string.yourHealth), *colors)
             loginBtn.setOnClickListener {
+                preferenc?.update("userName","islamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+                Log.d(TAG, "onViewCreated: ${preferenc?.load("userName","")} ")
 //                if (EtUserName.text.isNullOrEmpty()) {
 //                    ErrorDialog("Enter The User Name")
 //                } else if (EtPassword.text.isNullOrEmpty()) {
@@ -44,15 +47,18 @@ class LoginFragment : BaseFragment(R.layout.fragment_login) {
             }
             eng.setOnClickListener {
 //                prefrence?.save("lang","en")
-//                Log.d("islam", "onViewCreated:${prefrence?.load("lang","ar")} ")
-//                val intent = Intent(context, LoginActivity::class.java)
-//                context?.startActivity(intent)
+                Log.d("islam", "onViewCreated:${preferenc?.load("lang","ar")} ")
+                lang ="en"
+                val intent = Intent(context, LoginActivity::class.java)
+                context?.startActivity(intent)
             }
             Arabic.setOnClickListener {
 //                prefrence?.save("lang","ar")
 //                Log.d("islam", "onViewCreated:${prefrence?.load("lang","ar")} ")
-//                val intent = Intent(context, LoginActivity::class.java)
-//                context?.startActivity(intent)
+                lang="ar"
+                val intent = Intent(context, LoginActivity::class.java)
+                intent.putExtra("lang","ar")
+                context?.startActivity(intent)
 
             }
 

@@ -70,4 +70,11 @@ class PreferencesGateway @Inject constructor(@ApplicationContext val context: Co
             else -> throw UnsupportedOperationException("not supported preferences type")
         }
     }
+    inline fun <reified T : Any> update(key: String, value: T) {
+        context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .apply { putValue(key, value) }
+            .apply()
+    }
+
 }
