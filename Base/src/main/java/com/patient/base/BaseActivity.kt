@@ -37,6 +37,7 @@ abstract class BaseActivity(private val layoutResource: Int) : AppCompatActivity
 
     open fun setActions() {}
 
+
     fun showProgressFullScreen() {
         inflateLayout(R.layout.progress_dialog)
     }

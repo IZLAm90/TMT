@@ -55,7 +55,8 @@
     <string name="profile">Profile</string>
     <string name="age">age</string>
     <string name="payment">payment</string>
-
+    <string name="PsychologicalHealth">Psychological Health</string>
+    <string name="numOfCources">عدد الجلسات: 3</string>
 
 
 </resources>

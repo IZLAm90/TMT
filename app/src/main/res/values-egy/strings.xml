@@ -56,6 +56,8 @@
     <string name="age">العمر</string>
     <string name="payment">الدفع</string>
     <string name="Buy">ادفع الان</string>
+    <string name="PsychologicalHealth">Psychological Health</string>
+    <string name="numOfCources">عدد الجلسات: 3</string>
 
 
 </resources>

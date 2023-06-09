@@ -2,6 +2,7 @@ package com.patient.data.cashe
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.google.gson.Gson
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
@@ -75,6 +76,36 @@ class PreferencesGateway @Inject constructor(@ApplicationContext val context: Co
             .edit()
             .apply { putValue(key, value) }
             .apply()
+    }
+
+    val gson: Gson = Gson()
+    inline fun <reified T : Any> saveUser(key: String, value: T) {
+        val json = gson.toJson(value)
+        context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .apply { putString(key, json) }
+            .apply()
+    }
+    fun saveUser(userData: Any) {
+        userData.let {
+//            save("all-user-data", it)
+//            it.id?.let { it1 -> saveInt(ID, it1) }
+//            it.name?.let { it1 -> saveString(NAME, it1) }
+//            it.uid?.let { it1 -> saveString(UID, it1) }
+//            it.email?.let { it1 -> saveString(EMAIL, it1) }
+//            it.dob?.let { it1 -> saveString(DOB, it1) }
+//            saveString(WALLETDI_AMONDS_COUNT, it.wallet?.diamond.toString())
+//            it.pointsCount?.let { it1 -> saveString(POINTS_COUNT, it1) }
+//            it.currentLevel?.let { it1 -> saveString(CURRENT_LEVEL, it1) }
+//            it.gender?.let { it1 -> saveString(GENDER, it1) }
+//            it.country?.name?.let { it1 -> saveString(COUNTRY, it1) }
+//            it.currentProfileImageUrl?.let { it1 -> saveString(PROFILE_URL, it1) }
+//            it.wallet?.gold?.let { saveString(GOLDEN_COUNT, it.toString()) }
+//            it.agencyMembership?.let { it1 -> saveString(AGENCYMEMBER, it1) }
+//            it.level?.icon?.let { it1 -> saveString(LEVEL_IMAGE, it1) }
+//            it.bio?.let { it1 -> saveString(ABOUT, it1) }
+//            userData.group?.id?.let { it1 -> saveInt(GROUP, it1) }
+        }
     }
 
 }

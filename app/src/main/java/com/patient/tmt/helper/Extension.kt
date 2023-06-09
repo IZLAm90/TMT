@@ -22,12 +22,25 @@ import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.HttpException
-import com.patient.tmt.R
+import com.patient.data.cashe.PreferencesGateway
+
+inline fun <reified T : Any> PreferencesGateway.saveValue(key: String, value: T) {
+    save(key, value)
+}
+
+inline fun <reified T : Any> PreferencesGateway.updateValue(key: String, value: T) {
+    update(key, value)
+}
+
+inline fun <reified T : Any> PreferencesGateway.getValue(key: String, defaultValue: T): T? {
+    return load(key, defaultValue)
+}
 
 fun String.isValidEmail(): Boolean {
     val emailRegex = Regex(pattern = "^[^\\s].+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\$")
     return matches(emailRegex)
 }
+
 fun EditText.isValidInput(): Boolean {
     val input = text.toString().trim()
     return input.isNotEmpty() && !input.startsWith(" ")

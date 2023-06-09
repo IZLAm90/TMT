@@ -1,5 +1,6 @@
 package com.patient.di
 
+import android.util.Log
 import com.app.data.remote.UserApi
 import com.google.gson.GsonBuilder
 import com.patient.data.cashe.PreferencesGateway
@@ -15,7 +16,7 @@ import retrofit2.Converter
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
-
+const val TAG="NetWorkModule"
 @Module
 @InstallIn(SingletonComponent::class)
 object NetWorkModule {
@@ -39,14 +40,15 @@ object NetWorkModule {
             val requestBuilder = original.newBuilder()
                 .method(original.method, original.body)
 
-            requestBuilder.addHeader("Accept", "application/json")
-//            requestBuilder.addHeader("Content-Type", "application/x-www-form-urlencoded")
-            if (token.isNullOrBlank().not()) {
-                requestBuilder.addHeader("Authorization", token!!)
-            }
+            requestBuilder.addHeader("Content-Type", "application/json")
+            requestBuilder.addHeader("Authorization", "Basic U2VjbG9naW5JZC8yLEJyYW5jaElkLzEsbGluay8xMDE1NixXb3JrRmxvd1BhdGgvMjMyNi00MDYsRm9yRGVidWcvbnVsbCxBY2NvdW50SWQvMSxCcmFuY2hlc0Fyci91bmRlZmluZWQ=")
+//            "if (token.isNullOrBlank().not()) {
+//                requestBuilder.addHeader("Authorization", token!!)
+//            }"
 
             val request = requestBuilder
                 .build()
+            Log.d(TAG, "provideOkHttpClient: ${request}")
             return@addNetworkInterceptor chain.proceed(request)
         }
         if (BuildConfig.DEBUG) {

@@ -94,6 +94,8 @@ dependencies {
     // indicator
     implementation 'com.tbuonomo:dotsindicator:4.2'
 
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
 //compose
 //    implementation "androidx.compose.runtime:runtime:1.4.3"
 //    implementation "androidx.compose.ui:ui:1.4.3"
