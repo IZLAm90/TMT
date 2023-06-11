@@ -16,6 +16,12 @@
         <action
             android:id="@+id/action_homeOfNavigationFragment_to_instantConsultationFragment"
             app:destination="@id/instantConsultationFragment" />
+        <action
+            android:id="@+id/action_homeOfNavigationFragment_to_psychologicalHealthFragment"
+            app:destination="@id/psychologicalHealthFragment" />
+        <action
+            android:id="@+id/action_homeOfNavigationFragment_to_healthCareFragment"
+            app:destination="@id/healthCareFragment" />
     </fragment>
     <fragment
         android:id="@+id/medicalSpecialtiesFragment"
@@ -54,4 +60,14 @@
         android:name="com.patient.tmt.presentation.fragment.specialties.details.DoctorDetailsFragment"
         android:label="fragment_doctor_details"
         tools:layout="@layout/fragment_doctor_details" />
+    <fragment
+        android:id="@+id/psychologicalHealthFragment"
+        android:name="com.patient.tmt.presentation.fragment.psychological.PsychologicalHealthFragment"
+        android:label="fragment_psychoplogical_health"
+        tools:layout="@layout/fragment_psychoplogical_health" />
+    <fragment
+        android:id="@+id/healthCareFragment"
+        android:name="com.patient.tmt.presentation.fragment.healthycare.HealthCareFragment"
+        android:label="fragment_health_care"
+        tools:layout="@layout/fragment_health_care" />
 </navigation>

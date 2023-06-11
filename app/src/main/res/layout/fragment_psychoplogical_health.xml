@@ -57,7 +57,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="قائمة الأطباء"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -79,7 +79,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="تميزوا هذا الاسبوع"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -101,7 +101,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="يستجيبون خلال 6 ساعات"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -123,7 +123,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="يستجيبون خلال 24 ساعة"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -145,7 +145,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="تجارب المستخدمين"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -167,7 +167,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="برامج عناية بالصحة ذات علاقة"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -189,7 +189,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="شكاوي صحية شائعة"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -211,7 +211,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="الأمراض الشائعة"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -233,7 +233,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="الأمراض الشائعة"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -255,7 +255,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="متخصصون في طب عام"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -277,7 +277,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="متخصصون في طب أسرة"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -299,7 +299,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="متخصصون في طب وقائي "
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -321,7 +321,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="متخصصون في طب الشيخوخة "
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -343,7 +343,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="لست متأكد من اي تخصص تختار ؟"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -356,7 +356,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="@string/PsychologicalHealth"
+                    android:text="يتوفر لدينا اطباء أسرة علي مدار الساعة طوال ايام الاسبوع"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -375,14 +375,14 @@
                         android:padding="10dp"
                         android:src="@drawable/go" />
 
-                    <TextClock
+                    <TextView
                         android:layout_width="190dp"
                         android:layout_height="60dp"
                         android:layout_marginHorizontal="20dp"
                         android:fontFamily="@font/tajwal"
                         android:gravity="center"
-                        android:text="@string/PsychologicalHealth"
-                        android:textColor="@color/textColor"
+                        android:text="احصل علي استشارة فورية الان"
+                        android:textColor="@color/appColor"
                         android:textSize="13sp"
                         android:textStyle="bold" />
 
