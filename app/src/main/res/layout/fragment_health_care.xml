@@ -40,6 +40,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -60,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_psychological_programmes" />
+                tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_psychological_programmes" />
+                tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -102,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_psychological_programmes" />
+                tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -123,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_psychological_programmes" />
+                tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -144,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_psychological_programmes" />
+                tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -165,9 +166,130 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_psychological_programmes" />
+                tools:listitem="@layout/item_related_health" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/tajwal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="قائمة الأطباء"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/targetOne"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/target_arrow"
+                />
+            <TextView
+                android:id="@+id/tvTargetOne"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/targetOne"
+                android:text="1 - جلسات علاجية لتحقيق هدف صحي ما"
+            />
+            <ImageView
+                android:id="@+id/targetTwo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/tvTargetOne"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/target_arrow"
+                />
+            <TextView
+                android:id="@+id/tvTargetTwo"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tvTargetOne"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/targetTwo"
+                android:text="2 - 45 دقيقة من العلاج مع أخصائي"
+                />
 
+            <ImageView
+                android:id="@+id/targetThree"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/tvTargetOne"
+                android:src="@drawable/target_arrow"
+                />
+            <TextView
+                android:id="@+id/tvTargetThree"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/targetThree"
+                android:text="3 - مجدولة أسبوعيا حسب المواعيد التي تناسبك"
+                />
+            <ImageView
+                android:id="@+id/targetFour"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tvTargetTwo"
+                android:layout_toStartOf="@+id/tvTargetOne"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/target_arrow"
+                />
+            <TextView
+                android:id="@+id/tvTargetFour"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/tvTargetOne"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/targetFour"
+                android:text="4 - متابعة بعد الانتهاء ومهارات تدوم طول العمر"
+                />
+        </RelativeLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/tajwal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="قائمة الأطباء"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_related_health" />
 
         </LinearLayout>
 
