@@ -50,7 +50,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text="برامج نفسية"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -71,7 +71,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text="برامج الحياة الاسرية"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -92,7 +92,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text="برامج لتطوير الذاتء"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -113,7 +113,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text="برامج الاطفال"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -134,7 +134,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text="برامج تغذية"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -155,7 +155,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text=" برامج طبية"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -175,7 +175,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text=" ما هي برامج العناية بالصحة؟"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -278,7 +278,7 @@
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="قائمة الأطباء"
+                android:text="تجارب المستخدمين"
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
