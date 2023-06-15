@@ -24,7 +24,6 @@ class SpecialitiesViewMode @Inject constructor(private val useCase: MedicalUseCa
     }
     private  fun getMedicalData(){
         viewModelScope.launch {
-            Log.d("islam", "getMedicalData: ${useCase.getMdedicalData()}")
         _dataFlow.emit(useCase.getMdedicalData())
         }
     }

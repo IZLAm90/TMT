@@ -4,5 +4,5 @@ import com.patient.data.model.HealthCareModel
 import com.patient.data.model.MedicalSecialtyModel
 
 interface MedicalCareRepo {
-    suspend fun getPsychologicalProgrammes():ArrayList<HealthCareModel>
+    suspend fun getPsychologicalProgrammes(list: ArrayList<HealthCareModel>):ArrayList<HealthCareModel>
 }
