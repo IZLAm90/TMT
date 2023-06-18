@@ -11,7 +11,8 @@ class DoctorsAdapter : RecyclerView.Adapter<DoctorsAdapter.ViewHolder>(){
     private val list = ArrayList<DoctorsModel>()
     var OnItemSelected:((Int)->Unit) ?= null
 
-    inner class ViewHolder(val binding: ItemSpecificSpecialtiesBinding):RecyclerView.ViewHolder(binding.root){
+    inner class ViewHolder(val binding: ItemSpecificSpecialtiesBinding):
+        RecyclerView.ViewHolder(binding.root){
         fun bind(data : DoctorsModel){
             binding.apply {
                 docImg.setImageResource(R.drawable.speciality_icon)

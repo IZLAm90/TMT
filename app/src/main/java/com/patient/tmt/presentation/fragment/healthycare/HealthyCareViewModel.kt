@@ -13,11 +13,18 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HealthyCareViewModel@Inject constructor(private val useCase: MedicalCareUseCase) : ViewModel() {
-    private val _dataFlow = MutableSharedFlow<ArrayList<HealthCareModel>>()
-    val dataFlow = _dataFlow.asSharedFlow()
+    private val _dataFlowHealthCare = MutableSharedFlow<ArrayList<HealthCareModel>>()
+    private val _dataFlowFamilyLifeProgrammes = MutableSharedFlow<ArrayList<HealthCareModel>>()
+    val dataFlowHealthCare = _dataFlowHealthCare.asSharedFlow()
+    val dataFlowFamily = _dataFlowFamilyLifeProgrammes.asSharedFlow()
          fun getPsychologicalProgrammes(list: ArrayList<HealthCareModel>) {
             viewModelScope.launch {
-                _dataFlow.emit(useCase.getPsychologicalProgrammes(list))
+                _dataFlowHealthCare.emit(useCase.getPsychologicalProgrammes(list))
+            }
+        }
+    fun FamilyLifeProgrammes(list: ArrayList<HealthCareModel>) {
+            viewModelScope.launch {
+                _dataFlowFamilyLifeProgrammes.emit(useCase.FamilyLifeProgrammes(list))
             }
         }
 

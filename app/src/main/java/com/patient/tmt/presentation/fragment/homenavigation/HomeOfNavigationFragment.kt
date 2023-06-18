@@ -27,6 +27,13 @@ class HomeOfNavigationFragment : BaseFragment(R.layout.fragment_home_of_navigati
             consaltant.setOnClickListener {
                 findNavController().navigate(R.id.action_homeOfNavigationFragment_to_instantConsultationFragment)
             }
+            Psychologicalhealth.setOnClickListener {
+                findNavController().navigate(R.id.action_homeOfNavigationFragment_to_psychologicalHealthFragment)
+            }
+            HealthyCare.setOnClickListener {
+                findNavController().navigate(R.id.action_homeOfNavigationFragment_to_healthCareFragment)
+
+            }
 
         }
 

@@ -61,7 +61,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:scaleType="fitCenter"
-                android:src="@drawable/medicalcare"
+                android:src="@drawable/home_healthycare"
                 app:shapeAppearance="@style/RoundedImageRight" />
 
             <TextView
@@ -130,9 +130,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/medicalcare"
-                app:shapeAppearance="@style/RoundedImageRight" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_specialty"
+                app:shapeAppearance="@style/roundedImage" />
 
             <TextView
                 android:id="@+id/oneTitle2"
@@ -189,6 +189,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/Psychologicalhealth"
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:layout_margin="5dp"
@@ -202,9 +203,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mentalitycare"
-                app:shapeAppearance="@style/RoundedImageRight" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/healtypsh_home"
+                app:shapeAppearance="@style/roundedImage" />
 
             <TextView
                 android:id="@+id/oneTitle3"
@@ -212,12 +213,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/tajwal"
-
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_toStartOf="@+id/inf3"
                 android:gravity="center"
-                android:text="@string/speciality"
+                android:text="@string/Psychologicalhealth"
                 android:textColor="@color/textColor"
                 android:textSize="16sp" />
 
@@ -258,6 +258,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/HealthyCare"
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:layout_margin="5dp"
@@ -271,9 +272,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/healthecare"
-                app:shapeAppearance="@style/RoundedImageRight" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/healty_ca"
+                app:shapeAppearance="@style/roundedImage" />
 
             <TextView
                 android:id="@+id/oneTitle4"

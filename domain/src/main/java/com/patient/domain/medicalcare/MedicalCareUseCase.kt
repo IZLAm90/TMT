@@ -7,4 +7,5 @@ import javax.inject.Inject
 
 class MedicalCareUseCase@Inject constructor(private val repo: MedicalCareRepo) {
     suspend fun getPsychologicalProgrammes(list: ArrayList<HealthCareModel>)=repo.getPsychologicalProgrammes(list)
+    suspend fun FamilyLifeProgrammes(list: ArrayList<HealthCareModel>)=repo.FamilyLifeProgrammes(list)
 }
