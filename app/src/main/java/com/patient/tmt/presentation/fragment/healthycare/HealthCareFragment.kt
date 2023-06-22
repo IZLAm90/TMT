@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.patient.base.BaseFragment
 import com.patient.data.model.HealthCareModel
 import com.patient.tmt.R
@@ -15,6 +16,11 @@ import com.patient.tmt.presentation.adapter.PsychologicalProgrammesAdapter
 class HealthCareFragment : BaseFragment(R.layout.fragment_health_care) {
     private val viewModel by viewModels<HealthyCareViewModel>()
     private val adapterPsychological=PsychologicalProgrammesAdapter()
+    private val adapterFamilyLifeProgrammes=PsychologicalProgrammesAdapter()
+    private val adapterSelfDevelopmentProgrammes=PsychologicalProgrammesAdapter()
+    private val adapterKidsPrograms=PsychologicalProgrammesAdapter()
+    private val adapterNutritionProgrammes=PsychologicalProgrammesAdapter()
+    private val adapterMedicalPrograms=PsychologicalProgrammesAdapter()
     private lateinit var binding : FragmentHealthCareBinding
     val list : ArrayList<HealthCareModel> = arrayListOf()
 
@@ -28,7 +34,21 @@ class HealthCareFragment : BaseFragment(R.layout.fragment_health_care) {
         getHealthy()
         binding.apply {
             rvPsychologicalProgrammes.adapter=adapterPsychological
+            rvFamilyLifeProgrammes.adapter=adapterFamilyLifeProgrammes
+            rvSelfDevelopmentProgrammes.adapter=adapterSelfDevelopmentProgrammes
+            rvKidsPrograms.adapter=adapterKidsPrograms
+            rvNutritionProgrammes.adapter=adapterNutritionProgrammes
+            rvMedicalPrograms.adapter=adapterMedicalPrograms
             adapterPsychological.AddAll(list)
+            adapterFamilyLifeProgrammes.AddAll(list)
+            adapterSelfDevelopmentProgrammes.AddAll(list)
+            adapterKidsPrograms.AddAll(list)
+            adapterNutritionProgrammes.AddAll(list)
+            adapterMedicalPrograms.AddAll(list)
+
+            back.setOnClickListener {
+                findNavController().navigateUp()
+            }
         }
     }
     fun getHealthy(){

@@ -45,20 +45,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="برامج نفسية"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvPsychologicalProgrammes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="start"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_related_health" />
@@ -66,118 +67,123 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="برامج الحياة الاسرية"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/edicalSpecialties"
+                android:id="@+id/rvFamilyLifeProgrammes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_gravity="start"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="برامج لتطوير الذاتء"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvcalSpecialties"
+                android:id="@+id/rvSelfDevelopmentProgrammes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_gravity="start"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="برامج الاطفال"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvMedialties"
+                android:id="@+id/rvKidsPrograms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_gravity="start"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="برامج تغذية"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvMedicalSpecis"
+                android:id="@+id/rvNutritionProgrammes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_gravity="start"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_related_health" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text=" برامج طبية"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvMedicalSs"
+                android:id="@+id/rvMedicalPrograms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_gravity="start"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_related_health" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text=" ما هي برامج العناية بالصحة؟"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
         <RelativeLayout
             android:layout_width="match_parent"
@@ -273,14 +279,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="start"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/tajwal"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="تجارب المستخدمين"
                 android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -289,7 +295,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_related_health" />
+                tools:listitem="@layout/item_user_experuence" />
 
         </LinearLayout>
 
