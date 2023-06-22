@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="110dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/shape_round_out_line">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/docImg"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/speciality_icon"
+        android:theme="@style/RoundedImageRight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/docName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tajwal"
+        android:text="د. ايمن علي محمود"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/docImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/docSpeciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        android:text="طب عام"
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/tajwal"
+        app:layout_constraintEnd_toStartOf="@+id/docImg"
+        app:layout_constraintTop_toBottomOf="@id/docName" />
+
+    <TextView
+        android:id="@+id/docSpecialityin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/tajwal"
+        android:background="@drawable/rounded_background_gray"
+        android:paddingHorizontal="5dp"
+        android:text="طبيب عام"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/docImg"
+        app:layout_constraintTop_toBottomOf="@id/docSpeciality" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="4dp"
+        android:paddingHorizontal="5dp"
+        android:src="@drawable/icon_star"
+        app:layout_constraintEnd_toStartOf="@+id/docImg"
+        app:layout_constraintTop_toBottomOf="@id/docSpecialityin" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/tajwal"
+        android:paddingHorizontal="5dp"
+        android:hint="(48 مراجعات )4.7"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/star"
+        app:layout_constraintTop_toBottomOf="@id/docSpecialityin" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_like_un"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="12dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_back_status_doc"
+        android:src="@drawable/icon_red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

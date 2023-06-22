@@ -3,11 +3,13 @@ package com.patient.data.repository.medicalrepo
 import com.app.data.remote.UserApi
 import com.patient.data.model.DoctorsModel
 import com.patient.data.model.MedicalSecialtyModel
+import com.patient.data.model.UserExperienceModel
 import javax.inject.Inject
 
 class MedicalRepoImp @Inject constructor(private val api: UserApi)  : MedicalSpecialtyRepo{
      var mediacal :ArrayList<MedicalSecialtyModel> = arrayListOf()
      var doctors :ArrayList<DoctorsModel> = arrayListOf()
+     var userFeedBackList :ArrayList<UserExperienceModel> = arrayListOf()
     override suspend fun getSpecialtyData(): ArrayList<MedicalSecialtyModel> {
         mediacal.add(MedicalSecialtyModel("islam", 0))
         mediacal.add(MedicalSecialtyModel("ahmed", 0))
@@ -44,5 +46,25 @@ class MedicalRepoImp @Inject constructor(private val api: UserApi)  : MedicalSpe
         doctors.add(DoctorsModel("islam",6,"sfdfss","4.7","طب عام"))
         doctors.add(DoctorsModel("islam",6,"sfdfss","4.7","طب عام"))
        return  doctors
+    }
+
+    override suspend fun getUserFeedBack(): ArrayList<UserExperienceModel> {
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        userFeedBackList.add(UserExperienceModel("islam","doctor","5","mohamed","very lage ex and have a then a"))
+        return userFeedBackList
     }
 }
