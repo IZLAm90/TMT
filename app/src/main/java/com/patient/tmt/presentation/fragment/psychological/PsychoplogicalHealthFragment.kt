@@ -38,6 +38,7 @@ class PsychologicalHealthFragment : BaseFragment(R.layout.fragment_psychoplogica
             rvExcelledThisWeek.adapter=adapterExcelledThisWeek
             rvRespondRithin6hours.adapter=adapterRespondRithin6hours
             rvRespondRithin24hours.adapter=adapterRespondRithin24hours
+            rvUserExperiences.adapter=adapterUserExperience
             lifecycleScope.launch {
                 viewModel.doctorDataFlow.collect{
                     adapter.AddAll(it)

@@ -28,7 +28,7 @@
 
     <style name="roundedImage" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">8sp</item>
+        <item name="cornerSize">8dp</item>
     </style>
     <style name="RoundedImageRight">
         <item name="cornerFamily">rounded</item>
