@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.patient.data.model.HealthCareModel
 import com.patient.data.model.MedicalSecialtyModel
+import com.patient.data.model.UserExperienceModel
 import com.patient.domain.medicalcare.MedicalCareUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -14,9 +15,11 @@ import javax.inject.Inject
 @HiltViewModel
 class HealthyCareViewModel@Inject constructor(private val useCase: MedicalCareUseCase) : ViewModel() {
     private val _dataFlowHealthCare = MutableSharedFlow<ArrayList<HealthCareModel>>()
+    private val _dataFlowUserExperiance = MutableSharedFlow<ArrayList<UserExperienceModel>>()
     private val _dataFlowFamilyLifeProgrammes = MutableSharedFlow<ArrayList<HealthCareModel>>()
     val dataFlowHealthCare = _dataFlowHealthCare.asSharedFlow()
     val dataFlowFamily = _dataFlowFamilyLifeProgrammes.asSharedFlow()
+    val dataFlowUserExperience = _dataFlowUserExperiance.asSharedFlow()
          fun getPsychologicalProgrammes(list: ArrayList<HealthCareModel>) {
             viewModelScope.launch {
                 _dataFlowHealthCare.emit(useCase.getPsychologicalProgrammes(list))
@@ -28,4 +31,9 @@ class HealthyCareViewModel@Inject constructor(private val useCase: MedicalCareUs
             }
         }
 
+    fun getUserExperiance(list:ArrayList<UserExperienceModel>){
+        viewModelScope.launch {
+            _dataFlowUserExperiance.emit(useCase.getUserExperiance(list))
+        }
+    }
 }
