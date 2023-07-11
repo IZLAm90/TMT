@@ -3,6 +3,7 @@ package com.patient.tmt.helper
 import android.Manifest
 import android.app.Activity
 import android.app.ActivityManager
+import android.app.DatePickerDialog
 import android.content.Context
 import android.content.Context.TELEPHONY_SERVICE
 import android.content.Intent
@@ -23,6 +24,8 @@ import androidx.core.app.ActivityCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.HttpException
 import com.patient.data.cashe.PreferencesGateway
+import java.text.SimpleDateFormat
+import java.util.*
 
 inline fun <reified T : Any> PreferencesGateway.saveValue(key: String, value: T) {
     save(key, value)
@@ -225,4 +228,22 @@ private fun checkError(throwable: Throwable?) {
             else -> {}
         }
     }
+}
+fun showDialogDate(context: Context,selectionDate:String? ,dateSelected: DatePickerDialog.OnDateSetListener): DatePickerDialog {
+    var calendar: Calendar = Calendar.getInstance()
+    if (selectionDate!=null){
+        val date= SimpleDateFormat(DateAndTimeFormateUtil.formteDatayyyyMMdd).parse(selectionDate)
+        calendar.time=date!!
+
+    }
+
+    val dialog = DatePickerDialog(
+        context,
+        dateSelected,
+        calendar[Calendar.YEAR],
+        calendar[Calendar.MONTH],
+        calendar[Calendar.DAY_OF_MONTH]
+    )
+
+    return dialog
 }
