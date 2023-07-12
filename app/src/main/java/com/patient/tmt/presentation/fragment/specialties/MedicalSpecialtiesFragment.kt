@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -29,8 +30,9 @@ class MedicalSpecialtiesFragment : BaseFragment(R.layout.fragment_mediacl_specia
         binding.apply {
             rvMedicalSpecialties.setHasFixedSize(false)
             rvMedicalSpecialties.adapter=adapter
-            adapter.OnItemSelected={postion->
-                findNavController().navigate(R.id.action_medicalSpecialtiesFragment_to_specificSpecialtiesFragment)
+            adapter.OnItemSelected={postion,name->
+                val bundle = bundleOf("name" to name)
+                findNavController().navigate(R.id.action_medicalSpecialtiesFragment_to_specificSpecialtiesFragment,bundle)
             }
             back.setOnClickListener{
                 findNavController().navigateUp()
@@ -39,7 +41,6 @@ class MedicalSpecialtiesFragment : BaseFragment(R.layout.fragment_mediacl_specia
         lifecycleScope.launch {
             viewModel.dataFlow.collect {
                 adapter.AddAll(it)
-             Log.d("islam", "onViewCreated test one  : ${it} ")
             }
         }
 

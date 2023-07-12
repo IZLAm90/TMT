@@ -7,6 +7,7 @@ import com.patient.data.model.DoctorsModel
 import com.patient.data.model.MedicalSecialtyModel
 import com.patient.data.model.UserExperienceModel
 import com.patient.domain.MedicalUseCase
+import com.patient.tmt.helper.mediacalData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
@@ -28,7 +29,7 @@ class SpecialitiesViewMode @Inject constructor(private val useCase: MedicalUseCa
     }
     private  fun getMedicalData(){
         viewModelScope.launch {
-        _dataFlow.emit(useCase.getMdedicalData())
+        _dataFlow.emit(useCase.getMdedicalData(mediacalData()))
         }
     }
 

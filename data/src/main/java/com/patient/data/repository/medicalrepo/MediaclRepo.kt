@@ -7,25 +7,10 @@ import com.patient.data.model.UserExperienceModel
 import javax.inject.Inject
 
 class MedicalRepoImp @Inject constructor(private val api: UserApi)  : MedicalSpecialtyRepo{
-     var mediacal :ArrayList<MedicalSecialtyModel> = arrayListOf()
+
      var doctors :ArrayList<DoctorsModel> = arrayListOf()
      var userFeedBackList :ArrayList<UserExperienceModel> = arrayListOf()
-    override suspend fun getSpecialtyData(): ArrayList<MedicalSecialtyModel> {
-        mediacal.add(MedicalSecialtyModel("islam", 0))
-        mediacal.add(MedicalSecialtyModel("ahmed", 0))
-        mediacal.add(MedicalSecialtyModel("ali", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
-        mediacal.add(MedicalSecialtyModel("mohamed", 0))
+    override suspend fun getSpecialtyData(mediacal :ArrayList<MedicalSecialtyModel>): ArrayList<MedicalSecialtyModel> {
         return mediacal
     }
 

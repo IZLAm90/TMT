@@ -9,15 +9,15 @@ import com.patient.tmt.databinding.ItemMediaclSpecialtyBinding
 
 class MedicalSpecialtiesAdapter : RecyclerView.Adapter<MedicalSpecialtiesAdapter.ViewHolder>(){
     private val list = ArrayList<MedicalSecialtyModel>()
-    var OnItemSelected:((Int)->Unit) ?= null
+    var OnItemSelected:((Int,String)->Unit) ?= null
 
     inner class ViewHolder(val binding: ItemMediaclSpecialtyBinding):RecyclerView.ViewHolder(binding.root){
         fun bind(data :MedicalSecialtyModel){
             binding.apply {
-                imgSpecial.setImageResource(R.drawable.speciality_icon)
+                imgSpecial.setImageResource(data.img)
                 titleSpecial.text=data.name
                 root.setOnClickListener {
-                    OnItemSelected?.invoke(adapterPosition)
+                    OnItemSelected?.invoke(adapterPosition,data.name)
                 }
             }
 

@@ -5,7 +5,7 @@ import com.patient.data.model.MedicalSecialtyModel
 import com.patient.data.model.UserExperienceModel
 
 interface MedicalSpecialtyRepo {
-    suspend fun getSpecialtyData(): ArrayList<MedicalSecialtyModel>
+    suspend fun getSpecialtyData(mediacal :ArrayList<MedicalSecialtyModel>): ArrayList<MedicalSecialtyModel>
     suspend fun getSpecialtyDoctors(): ArrayList<DoctorsModel>
     suspend fun getUserFeedBack(): ArrayList<UserExperienceModel>
 }
