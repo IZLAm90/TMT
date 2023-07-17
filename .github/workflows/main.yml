@@ -16,7 +16,7 @@ jobs:
        - name: Run Lint
          run: ./gradlew lintDebug
        - name: Upload html test report
-         uses: actions/ipload-artifact@v2
+         uses: actions/upload-artifact@v2
          with:
             name: islam.html
             path: app/build/report/lint-results-debug.html
