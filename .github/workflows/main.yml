@@ -14,7 +14,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a one-line script
         run: echo "islam test!"
-
+      - name: Run a multi-line script
+        run: echo Add islam to multi line 
 
         
     
