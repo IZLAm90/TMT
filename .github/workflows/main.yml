@@ -14,10 +14,6 @@ jobs:
       -uses: action/checkout@2
       -name: Run a one-line script
         run: echo islam test!
-      -name: Run a multi-line script
-        run: |
-          echp Add other actions to bulid
-          echo Test and Deploy islam project
-          
+
         
     
