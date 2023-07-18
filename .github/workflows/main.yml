@@ -8,14 +8,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo "islam test!"
-      - name: Run a multi-line script
-        run: echo Add islam to multi line 
+      - name: Checkout the code
+        uses: actions/checkout@v2
+      - name: Run Lint
+        run: ./gradlew lintDebug
+      - name: Upload html test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: islam.html
+          path: app/build/reports/lint-results-debug.html
 
-        
+         
+       
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Run a one-line script
+#         run: echo "islam test!"
+#       - name: Run a multi-line script
+#         run: echo Add islam to multi line 
+ 
     
