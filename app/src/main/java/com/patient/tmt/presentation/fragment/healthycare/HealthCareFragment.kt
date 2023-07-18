@@ -10,6 +10,7 @@ import com.patient.data.model.HealthCareModel
 import com.patient.data.model.UserExperienceModel
 import com.patient.tmt.R
 import com.patient.tmt.databinding.FragmentHealthCareBinding
+import com.patient.tmt.helper.*
 import com.patient.tmt.presentation.adapter.AdapterUserExperience
 import com.patient.tmt.presentation.adapter.PsychologicalProgrammesAdapter
 import kotlinx.coroutines.flow.collectLatest
@@ -47,11 +48,12 @@ class HealthCareFragment : BaseFragment(R.layout.fragment_health_care) {
             rvMedicalPrograms.adapter = adapterMedicalPrograms
             rvMe.adapter=adapterUserExperience
             adapterPsychological.AddAll(list)
-            adapterFamilyLifeProgrammes.AddAll(list)
-            adapterSelfDevelopmentProgrammes.AddAll(list)
-            adapterKidsPrograms.AddAll(list)
-            adapterNutritionProgrammes.AddAll(list)
-            adapterMedicalPrograms.AddAll(list)
+            adapterFamilyLifeProgrammes.AddAll(familyLifeProgrammesData())
+            adapterSelfDevelopmentProgrammes.AddAll(selfDevelopmentData())
+            adapterKidsPrograms.AddAll(kidsData())
+            adapterNutritionProgrammes.AddAll(nutritionProgrammesData())
+            adapterMedicalPrograms.AddAll(MedicalProgramsData())
+            adapterUserExperience.addAll(userExperienceDate())
 
             back.setOnClickListener {
                 findNavController().navigateUp()
