@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingBottom="50dp"
     tools:context=".presentation.fragment.psychological.PsychologicalHealthFragment">
 
     <LinearLayout
@@ -57,7 +58,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="قائمة الأطباء"
+                    android:text="@string/doctors_list"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -79,7 +80,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="تميزوا هذا الاسبوع"
+                    android:text="@string/doc_of_this_week"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -101,7 +102,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="يستجيبون خلال 6 ساعات"
+                    android:text="@string/doc_in_6"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -123,7 +124,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="يستجيبون خلال 24 ساعة"
+                    android:text="@string/doc_in_24"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -145,7 +146,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="تجارب المستخدمين"
+                    android:text="@string/user_experience"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -167,7 +168,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="برامج عناية بالصحة ذات علاقة"
+                    android:text="@string/related_topics"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -189,7 +190,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="شكاوي صحية شائعة"
+                    android:text="@string/compelement"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -211,7 +212,7 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="الأمراض الشائعة"
+                    android:text="@string/common_deciessis"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -255,13 +256,13 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="متخصصون في طب عام"
+                    android:text="@string/doc_in_general"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvMed"
+                    android:id="@+id/rvDocGeneric"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -277,13 +278,13 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="متخصصون في طب أسرة"
+                    android:text="@string/doc_in_familys"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvSpecialistsInGeneralMedicine"
+                    android:id="@+id/rvDocFamily"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -299,13 +300,13 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="متخصصون في طب وقائي "
+                    android:text="@string/doc_in_care"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvFamilyMedicineSpecialists"
+                    android:id="@+id/rvDocCare"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -321,13 +322,13 @@
                     android:fontFamily="@font/tajwal"
                     android:gravity="center"
                     android:padding="10dp"
-                    android:text="متخصصون في طب الشيخوخة "
+                    android:text="@string/geriatrics_specialists"
                     android:textColor="@color/textColor"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvSpecialistsInPreventiveMedicine"
+                    android:id="@+id/rvDocOlder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"

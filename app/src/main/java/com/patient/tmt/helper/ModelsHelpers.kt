@@ -1,9 +1,12 @@
 package com.patient.tmt.helper
 
+import androidx.lifecycle.lifecycleScope
 import com.patient.data.model.HealthCareModel
 import com.patient.data.model.MedicalSecialtyModel
 import com.patient.data.model.UserExperienceModel
 import com.patient.tmt.R
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 var mediacal: ArrayList<MedicalSecialtyModel> = arrayListOf()
 var familyLifeData: ArrayList<HealthCareModel> = arrayListOf()
@@ -12,6 +15,10 @@ var kidsData: ArrayList<HealthCareModel> = arrayListOf()
 var nutritionProgrammesData: ArrayList<HealthCareModel> = arrayListOf()
 var medicalProgramsData: ArrayList<HealthCareModel> = arrayListOf()
 var userExperienceData: ArrayList<UserExperienceModel> = arrayListOf()
+var userExperienceDataInPsychological: ArrayList<UserExperienceModel> = arrayListOf()
+val list: ArrayList<HealthCareModel> = arrayListOf()
+val searchList: ArrayList<String> = arrayListOf()
+val searchListCommon: ArrayList<String> = arrayListOf()
 
 fun mediacalData(): ArrayList<MedicalSecialtyModel> {
     mediacal.add(MedicalSecialtyModel("طب الاسرة و المجتمع", R.drawable.family_))
@@ -48,6 +55,82 @@ fun mediacalData(): ArrayList<MedicalSecialtyModel> {
     mediacal.add(MedicalSecialtyModel("الصيدلية", R.drawable.pharmasy_s))
     mediacal.add(MedicalSecialtyModel("طب الطوارئ", R.drawable.surgary_s))
     return mediacal
+}
+
+fun getHealthy(): ArrayList<HealthCareModel> {
+    list.add(
+        HealthCareModel(
+            R.drawable.controlofphobia,
+            "السيطرة علي الرهاب",
+            "حالة من الخوف الشديد والمتواصل من مواقف او نشاطات معينة عند ",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.anxietyinacrisis,
+            "السيطرة علي الرهاب",
+            "برنامج علاجي سلوكي معرفي مخصص لكل حاله تتشارك فيه مع",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.afterdepression,
+            "السيطرة علي الرهاب",
+            "برنامج علاجي سلوكي معرفي مخمص لكل حاله، تتشارك فيه مع ",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.obsessivecompulsivedisorder,
+            "السيطرة علي الرهاب",
+            "أفكار ملازمة ..ملحة وضاغطة يصعب التخلص منها وأفعال قهرية مرهقة",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.panicdisorder,
+            "السيطرة علي الرهاب",
+            "شعور مفاجئ يتصاعد في غفون عشر دقائق حالة من الفزع الشديد",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.pathologicalemotionalattachment,
+            "السيطرة علي الرهاب",
+            "تمثل القدرة على تكوين علاقات محية مع الآخرين جزءا ضروريا فى",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.sensitivepersonality,
+            "السيطرة علي الرهاب",
+            "لكل انسان نمط شخصية مختلف ، الا أن البعض قد يعانى من بعض",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.anxietyinacrisis,
+            "السيطرة علي الرهاب",
+            "ينتابك ذعر وأفكار سلبية ؟ قلق ومتوتر بإستمرار ؟ نومك اضطرب ",
+            "عدد الجلسات: 6"
+        )
+    )
+    list.add(
+        HealthCareModel(
+            R.drawable.achievementcourse,
+            "السيطرة علي الرهاب",
+            "لقلق فترة الامتحانات من الأمور الطبيعية وهو أحد دوافع النجاح. إلا ",
+            "عدد الجلسات: 6"
+        )
+    )
+    return list
 }
 
 fun familyLifeProgrammesData(): ArrayList<HealthCareModel> {
@@ -157,4 +240,72 @@ fun userExperienceDate():ArrayList<UserExperienceModel>{
     userExperienceData.add(UserExperienceModel("islam","ada","adds","adsda","adsada"))
 
     return userExperienceData
+}
+
+fun getUserExperiance() : ArrayList<UserExperienceModel>{
+
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+    userExperienceDataInPsychological.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
+
+return userExperienceDataInPsychological
+}
+
+fun searchDataIssue():ArrayList<String>{
+    searchList.add("حراره")
+    searchList.add("عدم انتظام الدورة الشهرية")
+    searchList.add("حكة")
+    searchList.add("حساسية الحليب")
+    searchList.add("اضطراب التغذية")
+    searchList.add("عقم")
+    searchList.add("الامساك")
+    searchList.add("التعرق الشديد")
+    searchList.add("متلازمة الايض")
+    searchList.add("احتباس البول")
+    searchList.add("طفح")
+    searchList.add("القيئ")
+    searchList.add("عسر الحيض")
+    searchList.add("نحافة")
+    return searchList
+}
+
+fun searchDataCommon():ArrayList<String>{
+    searchListCommon.add("هشاشه العظام")
+    searchListCommon.add("شلل الوجة النصفي")
+    searchListCommon.add("البهاق")
+    searchListCommon.add("التهاب الجيوب")
+    searchListCommon.add("الصدفية")
+    searchListCommon.add("عقم")
+    searchListCommon.add("الامساك")
+    searchListCommon.add("التعرق الشديد")
+    searchListCommon.add("متلازمة الايض")
+    searchListCommon.add("احتباس البول")
+    searchListCommon.add("طفح")
+    searchListCommon.add("التهاب الاحليل")
+    searchListCommon.add("حب الشباب ")
+    return searchListCommon
 }

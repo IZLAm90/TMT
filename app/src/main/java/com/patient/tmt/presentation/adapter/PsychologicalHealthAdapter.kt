@@ -5,13 +5,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.patient.data.model.DoctorsModel
 import com.patient.tmt.R
-import com.patient.tmt.databinding.ItemSpecificSpecialtiesBinding
+import com.patient.tmt.databinding.ItemPsychologicalHealthDoctorsBinding
 
-class DoctorsAdapter : RecyclerView.Adapter<DoctorsAdapter.ViewHolder>(){
+class PsychologicalHealthAdapter : RecyclerView.Adapter<PsychologicalHealthAdapter.ViewHolder>() {
     private val list = ArrayList<DoctorsModel>()
     var OnItemSelected:((Int)->Unit) ?= null
 
-    inner class ViewHolder(val binding: ItemSpecificSpecialtiesBinding):
+    inner class ViewHolder(val binding: ItemPsychologicalHealthDoctorsBinding):
         RecyclerView.ViewHolder(binding.root){
         fun bind(data : DoctorsModel){
             binding.apply {
@@ -27,7 +27,7 @@ class DoctorsAdapter : RecyclerView.Adapter<DoctorsAdapter.ViewHolder>(){
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(ItemSpecificSpecialtiesBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+        return ViewHolder(ItemPsychologicalHealthDoctorsBinding.inflate(LayoutInflater.from(parent.context),parent,false))
 
     }
 

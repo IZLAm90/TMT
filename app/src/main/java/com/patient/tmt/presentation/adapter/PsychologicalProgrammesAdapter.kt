@@ -3,10 +3,8 @@ package com.patient.tmt.presentation.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.patient.data.model.DoctorsModel
 import com.patient.data.model.HealthCareModel
 import com.patient.tmt.databinding.ItemRelatedHealthBinding
-import com.patient.tmt.helper.loadImage
 
 class PsychologicalProgrammesAdapter :
     RecyclerView.Adapter<PsychologicalProgrammesAdapter.ViewHolder>() {

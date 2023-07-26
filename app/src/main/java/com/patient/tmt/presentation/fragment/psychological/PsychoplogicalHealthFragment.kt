@@ -12,19 +12,29 @@ import androidx.navigation.fragment.findNavController
 import com.patient.base.BaseFragment
 import com.patient.tmt.R
 import com.patient.tmt.databinding.FragmentPsychoplogicalHealthBinding
-import com.patient.tmt.presentation.adapter.AdapterUserExperience
-import com.patient.tmt.presentation.adapter.DoctorsAdapter
+import com.patient.tmt.helper.nutritionProgrammesData
+import com.patient.tmt.helper.searchDataCommon
+import com.patient.tmt.helper.searchDataIssue
+import com.patient.tmt.helper.userExperienceDate
+import com.patient.tmt.presentation.adapter.*
 import com.patient.tmt.presentation.fragment.specialties.SpecialitiesViewMode
 import kotlinx.coroutines.launch
 
 class PsychologicalHealthFragment : BaseFragment(R.layout.fragment_psychoplogical_health) {
     private lateinit var binding:FragmentPsychoplogicalHealthBinding
     private val viewModel by viewModels<SpecialitiesViewMode> ()
-    private val adapter = DoctorsAdapter()
-    private val adapterExcelledThisWeek = DoctorsAdapter()
-    private val adapterRespondRithin6hours = DoctorsAdapter()
-    private val adapterRespondRithin24hours = DoctorsAdapter()
+    private val adapter = PsychologicalHealthAdapter()
+    private val adapterExcelledThisWeek = PsychologicalHealthAdapter()
+    private val adapterRespondRithin6hours = PsychologicalHealthAdapter()
+    private val adapterRespondRithin24hours = PsychologicalHealthAdapter()
     private val adapterUserExperience = AdapterUserExperience()
+    private val adapterRelatedHealthyCare = PsychologicalProgrammesAdapter()
+    private val adapterFilters = FilterAdapter()
+    private val adapterFiltersCommon = FilterAdapter()
+    private val adapterDocGeneric = DoctorPsyWithDesc()
+    private val adapterDocFamily= DoctorPsyWithDesc()
+    private val adapterDocCare= DoctorPsyWithDesc()
+    private val adapterDocOlder= DoctorPsyWithDesc()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -39,15 +49,29 @@ class PsychologicalHealthFragment : BaseFragment(R.layout.fragment_psychoplogica
             rvRespondRithin6hours.adapter=adapterRespondRithin6hours
             rvRespondRithin24hours.adapter=adapterRespondRithin24hours
             rvUserExperiences.adapter=adapterUserExperience
+            rvRelatedHealthCareProgrammes.adapter=adapterRelatedHealthyCare
+            rvCommonHealthComplaints.adapter=adapterFilters
+            rvCommonDiseases.adapter=adapterFiltersCommon
+            rvDocCare.adapter=adapterDocCare
+            rvDocFamily.adapter=adapterDocFamily
+            rvDocGeneric.adapter=adapterDocGeneric
+            rvDocOlder.adapter=adapterDocOlder
+
             lifecycleScope.launch {
                 viewModel.doctorDataFlow.collect{
                     adapter.AddAll(it)
+                    adapterDocCare.AddAll(it)
+                    adapterDocFamily.AddAll(it)
+                    adapterDocGeneric.AddAll(it)
+                    adapterDocOlder.AddAll(it)
                     adapterExcelledThisWeek.AddAll(it)
                     adapterRespondRithin6hours.AddAll(it)
                     adapterRespondRithin24hours.AddAll(it)
-                    Log.d("islam", "onViewCreated doctorDataFlow one  : ${it} ")
                 }
             }
+            adapterRelatedHealthyCare.AddAll(nutritionProgrammesData())
+            adapterFilters.addAll(searchDataIssue())
+            adapterFiltersCommon.addAll(searchDataCommon())
             lifecycleScope.launch {
                 viewModel.userExperienceDataFlow.collect{
                     adapterUserExperience.addAll(it)

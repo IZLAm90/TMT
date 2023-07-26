@@ -27,7 +27,6 @@ class HealthCareFragment : BaseFragment(R.layout.fragment_health_care) {
     private val adapterUserExperience = AdapterUserExperience()
     private lateinit var binding: FragmentHealthCareBinding
 
-    val list: ArrayList<HealthCareModel> = arrayListOf()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -47,7 +46,7 @@ class HealthCareFragment : BaseFragment(R.layout.fragment_health_care) {
             rvNutritionProgrammes.adapter = adapterNutritionProgrammes
             rvMedicalPrograms.adapter = adapterMedicalPrograms
             rvMe.adapter=adapterUserExperience
-            adapterPsychological.AddAll(list)
+            adapterPsychological.AddAll(getHealthy())
             adapterFamilyLifeProgrammes.AddAll(familyLifeProgrammesData())
             adapterSelfDevelopmentProgrammes.AddAll(selfDevelopmentData())
             adapterKidsPrograms.AddAll(kidsData())
@@ -59,119 +58,14 @@ class HealthCareFragment : BaseFragment(R.layout.fragment_health_care) {
                 findNavController().navigateUp()
             }
         }
-    }
-
-    fun getHealthy() {
-        list.add(
-            HealthCareModel(
-                R.drawable.controlofphobia,
-                "السيطرة علي الرهاب",
-                "حالة من الخوف الشديد والمتواصل من مواقف او نشاطات معينة عند ",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.anxietyinacrisis,
-                "السيطرة علي الرهاب",
-                "برنامج علاجي سلوكي معرفي مخصص لكل حاله تتشارك فيه مع",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.afterdepression,
-                "السيطرة علي الرهاب",
-                "برنامج علاجي سلوكي معرفي مخمص لكل حاله، تتشارك فيه مع ",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.obsessivecompulsivedisorder,
-                "السيطرة علي الرهاب",
-                "أفكار ملازمة ..ملحة وضاغطة يصعب التخلص منها وأفعال قهرية مرهقة",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.panicdisorder,
-                "السيطرة علي الرهاب",
-                "شعور مفاجئ يتصاعد في غفون عشر دقائق حالة من الفزع الشديد",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.pathologicalemotionalattachment,
-                "السيطرة علي الرهاب",
-                "تمثل القدرة على تكوين علاقات محية مع الآخرين جزءا ضروريا فى",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.sensitivepersonality,
-                "السيطرة علي الرهاب",
-                "لكل انسان نمط شخصية مختلف ، الا أن البعض قد يعانى من بعض",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.anxietyinacrisis,
-                "السيطرة علي الرهاب",
-                "ينتابك ذعر وأفكار سلبية ؟ قلق ومتوتر بإستمرار ؟ نومك اضطرب ",
-                "عدد الجلسات: 6"
-            )
-        )
-        list.add(
-            HealthCareModel(
-                R.drawable.achievementcourse,
-                "السيطرة علي الرهاب",
-                "لقلق فترة الامتحانات من الأمور الطبيعية وهو أحد دوافع النجاح. إلا ",
-                "عدد الجلسات: 6"
-            )
-        )
-        viewModel.getPsychologicalProgrammes(list)
-    }
-
-    fun getUserExperiance() {
-        val list: ArrayList<UserExperienceModel> = arrayListOf()
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        list.add(UserExperienceModel("ali", "therapest", "55", "islam", "very good00"))
-        viewModel.getUserExperiance(list)
+        viewModel.getUserExperiance(getUserExperiance())
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.dataFlowUserExperience.collectLatest {
-            adapterUserExperience.addAll(it)
+                adapterUserExperience.addAll(it)
             }
         }
-
     }
+
+
+
 }

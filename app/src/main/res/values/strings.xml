@@ -57,7 +57,18 @@
     <string name="payment">payment</string>
     <string name="PsychologicalHealth">Psychological Health</string>
     <string name="numOfCources">عدد الجلسات: 3</string>
-
+    <string name="doctors_list">قائمة الأطباء</string>
+    <string name="doc_of_this_week">تميزوا هذا الاسبوع</string>
+    <string name="doc_in_6">يستجيبون خلال 6 ساعات</string>
+    <string name="doc_in_24">يستجيبون خلال 24 ساعة</string>
+    <string name="user_experience">تجارب المستخدمين</string>
+    <string name="related_topics">برامج عناية بالصحة ذات علاقة</string>
+    <string name="compelement">شكاوي صحية شائعة</string>
+    <string name="common_deciessis">الأمراض الشائعة</string>
+    <string name="doc_in_general">متخصصون في طب عام</string>
+    <string name="doc_in_familys">متخصصون في طب أسرة</string>
+    <string name="doc_in_care">متخصصون في طب وقائي</string>
+    <string name="geriatrics_specialists">متخصصون في طب الشيخوخة</string>
 
 
 </resources>
