@@ -64,7 +64,11 @@
         android:id="@+id/psychologicalHealthFragment"
         android:name="com.patient.tmt.presentation.fragment.psychological.PsychologicalHealthFragment"
         android:label="fragment_psychoplogical_health"
-        tools:layout="@layout/fragment_psychoplogical_health" />
+        tools:layout="@layout/fragment_psychoplogical_health" >
+        <action
+            android:id="@+id/action_psychologicalHealthFragment_to_doctorDetailsFragment"
+            app:destination="@id/doctorDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/healthCareFragment"
         android:name="com.patient.tmt.presentation.fragment.healthycare.HealthCareFragment"

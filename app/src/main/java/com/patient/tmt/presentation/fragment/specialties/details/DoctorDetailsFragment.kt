@@ -25,6 +25,9 @@ class DoctorDetailsFragment : BaseFragment(R.layout.fragment_doctor_details) {
         binding = FragmentDoctorDetailsBinding.bind(view)
         binding.apply {
             rvFeedBack.adapter=adapterUserExperience
+            ConsultNow.setOnClickListener {
+
+            }
         }
         lifecycleScope.launch {
             viewModel.userExperienceDataFlow.collect{

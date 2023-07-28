@@ -56,6 +56,18 @@ class PsychologicalHealthFragment : BaseFragment(R.layout.fragment_psychoplogica
             rvDocFamily.adapter=adapterDocFamily
             rvDocGeneric.adapter=adapterDocGeneric
             rvDocOlder.adapter=adapterDocOlder
+            adapter.OnItemSelected={i->
+                findNavController().navigate(R.id.action_psychologicalHealthFragment_to_doctorDetailsFragment)
+            }
+            adapterExcelledThisWeek.OnItemSelected={i->
+                findNavController().navigate(R.id.action_psychologicalHealthFragment_to_doctorDetailsFragment)
+            }
+            adapterRespondRithin6hours.OnItemSelected={i->
+                findNavController().navigate(R.id.action_psychologicalHealthFragment_to_doctorDetailsFragment)
+            }
+            adapterRespondRithin24hours.OnItemSelected={i->
+                findNavController().navigate(R.id.action_psychologicalHealthFragment_to_doctorDetailsFragment)
+            }
 
             lifecycleScope.launch {
                 viewModel.doctorDataFlow.collect{
