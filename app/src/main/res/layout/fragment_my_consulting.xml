@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.fragment.myconsultant.myConsultingFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/tajwal"
+        android:gravity="end"
+        android:padding="10dp"
+        android:text="@string/InstantConsultation"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/shape_round_out_line"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="islam"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_item_gray"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="islam"
+            android:background="@drawable/rounded_item_gray"
+            android:textColor="@color/textColor"
+            android:layout_marginEnd="5dp"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="islam"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_item_gray"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="islam"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_item_gray"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

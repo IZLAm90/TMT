@@ -21,7 +21,7 @@ class InboxFragment : BaseFragment(R.layout.fragment_inbox) {
                 findNavController().navigateUp()
             }
             more.setOnClickListener {
-
+            imagePicker.pickFromStorage()
             }
         }
     }
